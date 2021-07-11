@@ -10,10 +10,10 @@
 
 ## Tasks
 - [x] Read the README file
-- [ ] Write CNN classifier using pytorch
-- [ ] Write RNN classifier using pytorch
-- [X] Prepare the Fashion MNIST training set for CNN
-- [ ] Prepare the Fashion MNIST training set for RNN
+- [x] Write CNN classifier using pytorch
+- [x] Write RNN classifier using pytorch
+- [x] Prepare the Fashion MNIST training set for CNN
+- [x] Prepare the Fashion MNIST training set for RNN
 - [ ] Fine-tuning the CNN on training set (cross validation)
 - [ ] Fine-tuning the RNN on training set (cross validation)
 - [ ] Measure CNN performance on test set
