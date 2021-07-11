@@ -12,7 +12,7 @@
 - [x] Read the README file
 - [ ] Write CNN classifier using pytorch
 - [ ] Write RNN classifier using pytorch
-- [ ] Prepare the Fashion MNIST training set for CNN
+- [X] Prepare the Fashion MNIST training set for CNN
 - [ ] Prepare the Fashion MNIST training set for RNN
 - [ ] Fine-tuning the CNN on training set (cross validation)
 - [ ] Fine-tuning the RNN on training set (cross validation)
