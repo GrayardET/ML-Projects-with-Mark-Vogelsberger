@@ -16,6 +16,11 @@ from torch import optim
 from torch import nn
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+from data_manager import get_trainset2d_norm
+from data_manager import get_testset2d_norm
+from data_manager import get_loader
+from data_manager import K_fold
+from configs import *
 
 
 class CNN(nn.Module):
@@ -47,8 +52,8 @@ learning_rate = 0.01
 batch_size = 64
 num_epochs = 5
 
-train_dataset = datasets.FashionMNIST(root="dataset/", train=True, transform=transforms.ToTensor(), download=True)
-test_dataset = datasets.FashionMNIST(root="dataset/", train=False, transform=transforms.ToTensor(), download=True)
+train_dataset = get_trainset2d_norm()
+test_dataset = get_testset2d_norm()
 train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=True)
 
