@@ -1,9 +1,16 @@
 '''
 Please add utililty functions here
 '''
+from numpy.lib.function_base import average
+import seaborn as sns
 import torch
 import matplotlib.pyplot as plt
 from configs import *
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import f1_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from data_manager import get_loader
 
 def check_accuracy(loader, model, device):
     num_correct = 0
@@ -39,3 +46,42 @@ def plot_valid_train_accu(steps, val_accur, train_accur, title):
 
     fig.savefig(PLOT_DIR + title +'.png')
 
+def plot_confusion_heatmap(model, dataset):
+    loader = get_loader(dataset, len(dataset))
+    model.eval()
+    model.to('cpu')
+    _, (data, labels) = enumerate(loader).__next__()
+    predicts = model.predict(data)
+
+    conf_mat = confusion_matrix(labels, predicts)
+
+    fig, ax = plt.subplots(figsize=(10, 9))
+    ax = sns.heatmap(
+        conf_mat, 
+        xticklabels=dataset.classes, 
+        yticklabels=dataset.classes, 
+        annot=True, 
+        cmap="YlGnBu", 
+        fmt='d', 
+        ax=ax, 
+        linewidths=.5
+    )
+
+    plt.draw()
+
+    fig.savefig(PLOT_DIR + 'heat_map.png')
+
+    return conf_mat
+    
+def cal_matrics(model, dataset):
+    loader = get_loader(dataset, len(dataset))
+    model.eval()
+    model.to('cpu')
+    _, (data, labels) = enumerate(loader).__next__()
+    predicts = model.predict(data)
+
+    f1 = f1_score(labels, predicts, average='macro')
+    precision = precision_score(labels, predicts, average='macro')
+    recall = recall_score(labels, predicts, average='macro')
+
+    return f1, precision, recall
