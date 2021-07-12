@@ -11,6 +11,7 @@ from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from data_manager import get_loader
+from torch.utils.data import DataLoader
 
 def check_accuracy(loader, model, device):
     num_correct = 0
@@ -31,7 +32,7 @@ def check_accuracy(loader, model, device):
     return num_correct/num_samples
 
 def plot_valid_train_accu(steps, val_accur, train_accur, title):
-    fig, (ax1) = plt.subplots(1, 1)
+    fig, ax1 = plt.subplots(dpi=600)
     ax1.plot(steps, val_accur, label='Validation')
     ax1.plot(steps, train_accur, label='Training')
 
@@ -47,6 +48,12 @@ def plot_valid_train_accu(steps, val_accur, train_accur, title):
     fig.savefig(PLOT_DIR + title +'.png')
 
 def plot_confusion_heatmap(model, dataset):
+    loader = DataLoader(
+        dataset=dataset,
+        batch_size=len(dataset),
+        shuffle=True,
+        num_workers=4
+    )
     loader = get_loader(dataset, len(dataset))
     model.eval()
     model.to('cpu')
@@ -55,7 +62,7 @@ def plot_confusion_heatmap(model, dataset):
 
     conf_mat = confusion_matrix(labels, predicts)
 
-    fig, ax = plt.subplots(figsize=(10, 9))
+    fig, ax = plt.subplots(figsize=(10, 9), dpi=600)
     ax = sns.heatmap(
         conf_mat, 
         xticklabels=dataset.classes, 
@@ -64,7 +71,7 @@ def plot_confusion_heatmap(model, dataset):
         cmap="YlGnBu", 
         fmt='d', 
         ax=ax, 
-        linewidths=.5
+        linewidths=.8
     )
 
     plt.draw()
