@@ -32,12 +32,18 @@ class CNN(nn.Module):
             stride=(1, 1),
             padding=(1, 1),
         )
-        self.pool = nn.MaxPool2d(kernel_size=(2, 2))
+        self.conv2 = nn.Conv2d(
+            in_channels=32,
+            out_channels=32,
+            kernel_size=(2, 2),
+            stride=(2, 2),
+            padding=(0, 0),
+        )        
         self.fc1 = nn.Linear(32 * 14 * 14, 10)
 
     def forward(self, x):
         x = F.relu(self.conv1(x))
-        x = self.pool(x)
+        x = F.relu(self.conv2(x))
         x = x.reshape(x.shape[0], -1)
         x = self.fc1(x)
         return x
@@ -49,7 +55,7 @@ class CNN(nn.Module):
         return predicts
 
 def train_cnn(batch_size, epoche, learning_rate, train_folds, val_index, best_validation_accuracy):
-    title = "batch_szie: %d|Epoche: %d|Learning_rate: %f|K: %d" % (batch_size, epoche, learning_rate, K)
+    title = "STRIDE|batch_szie: %d|Epoche: %d|Learning_rate: %f|K: %d" % (batch_size, epoche, learning_rate, K)
     warn("Start training, with\nbatch_szie: %d\nEpoche: %d\nLearning_rate: %f\nK: %d" % (batch_size, epoche, learning_rate, K))
     if torch.cuda.is_available():
         device = torch.device('cuda')
@@ -124,8 +130,8 @@ if __name__ == "__main__":
     train_set = get_trainset2d_norm()
     folds = K_fold(train_set, 10)
 
-    best_validation_accuracy = 0.912
-    for learning_rate in [0.001]:
+    best_validation_accuracy = 0.87
+    for learning_rate in [0.001, 0.0001, 0.1, 0.01]:
         for i in range(3):
             best_validation_accuracy = train_cnn(
                 batch_size=16, 
@@ -135,60 +141,3 @@ if __name__ == "__main__":
                 val_index=random.randint(0, 9), 
                 best_validation_accuracy=best_validation_accuracy
             )
-
-
-
-    
-
-# in_channels = 1
-# num_classes = 10
-# batch_size = 64
-# num_epochs = 5
-
-# train_dataset = get_trainset2d_norm()
-# test_dataset = get_testset2d_norm()
-# train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
-# test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=True)
-
-# model = CNN(in_channels=in_channels, num_classes=num_classes).to(device)
-
-# criterion = nn.CrossEntropyLoss()
-# optimizer = optim.Adam(model.parameters(), lr=learning_rate)
-
-
-# for epoch in range(num_epochs):
-#     for batch_idx, (data, targets) in enumerate(tqdm(train_loader)):
-
-#         data = data.to(device=device)
-#         targets = targets.to(device=device)
-
-#         scores = model(data)
-#         loss = criterion(scores, targets)
-
-#         optimizer.zero_grad()
-#         loss.backward()
-
-#         optimizer.step()
-
-
-# def check_accuracy(loader, model, device):
-#     num_correct = 0
-#     num_samples = 0
-#     model.eval()
-
-#     with torch.no_grad():
-#         for x, y in loader:
-#             x = x.to(device=device)
-#             y = y.to(device=device)
-#             model.to(device)
-
-#             scores = model(x)
-#             _, predictions = scores.max(1)
-#             num_correct += (predictions == y).sum()
-#             num_samples += predictions.size(0)
-
-#     model.train()
-#     return num_correct/num_samples
-
-# print(f"Accuracy on training set: {check_accuracy(train_loader, model)*100:.2f}")
-# print(f"Accuracy on test set: {check_accuracy(test_loader, model)*100:.2f}")
