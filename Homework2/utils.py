@@ -81,7 +81,12 @@ def plot_confusion_heatmap(model, dataset):
     return conf_mat
     
 def cal_matrics(model, dataset):
-    loader = get_loader(dataset, len(dataset))
+    loader = DataLoader(
+        dataset=dataset,
+        batch_size=len(dataset),
+        shuffle=True,
+        num_workers=4
+    )
     model.eval()
     model.to('cpu')
     _, (data, labels) = enumerate(loader).__next__()
