@@ -111,6 +111,7 @@ def train_cnn(batch_size, epoche, learning_rate, train_folds, val_index, best_va
 
             if valid_accur > best_validation_accuracy and epoche > 1:
                 torch.save(model.state_dict(), MODEL_DIR + title + "|Accuracy: " + str(float(best_validation_accuracy)))
+                best_validation_accuracy = valid_accur
 
     info("Epoche %d finished, time usage:%f" % (e, time.time() - start_time))
     plot_valid_train_accu(step_nums, validation_accuracies, train_accuracies, title)
@@ -123,8 +124,16 @@ train_set = get_trainset2d_norm()
 folds = K_fold(train_set, 10)
 
 best_validation_accuracy = 0
-for learning_rate in [1, 0.1, 0.01, 0.001, 0.0001]:
-    best_validation_accuracy = train_cnn(16, 10, learning_rate, folds, random.randint(0, 9), best_validation_accuracy)
+for learning_rate in [0.01, 0.1, 0.001, 0.0001]:
+    for i in range(3):
+        best_validation_accuracy = train_cnn(
+            batch_size=16, 
+            epoche=10, 
+            learning_rate=learning_rate, 
+            train_folds=folds, 
+            val_index=random.randint(0, 9), 
+            best_validation_accuracy=best_validation_accuracy
+        )
 
 
 
