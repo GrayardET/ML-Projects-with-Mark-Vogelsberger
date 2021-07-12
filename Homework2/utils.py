@@ -35,5 +35,7 @@ def plot_valid_train_accu(steps, val_accur, train_accur, title):
 
     fig.suptitle(title)
 
-    plt.savefig(PLOT_DIR + title +'.png')
+    plt.draw()
+
+    fig.savefig(PLOT_DIR + title +'.png')
 
