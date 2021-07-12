@@ -17,7 +17,7 @@ import time
 import logging
 from logging import info
 from logging import warn
-logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG)
+logging.basicConfig(filename=LOG_FILE, level=logging.INFO)
 from utils import check_accuracy
 from utils import plot_valid_train_accu
 import random
@@ -28,7 +28,7 @@ class CNN(nn.Module):
         self.conv1 = nn.Conv2d(
             in_channels=1,
             out_channels=32,
-            kernel_size=(2, 2),
+            kernel_size=(3, 3),
             stride=(1, 1),
             padding=(1, 1),
         )
@@ -86,7 +86,6 @@ def train_cnn(batch_size, epoche, learning_rate, train_folds, val_index, best_va
         for train_set in tqdm(train_sets):
             train_loader = get_loader(train_set, batch_size)
             valid_loader = get_loader(validation_set, batch_size)
-            valid_loader_n = enumerate(valid_loader)
 
             for _, (batch, labels) in enumerate(train_loader):
                 batch = batch.to(device)
@@ -102,19 +101,21 @@ def train_cnn(batch_size, epoche, learning_rate, train_folds, val_index, best_va
                 # Finished one more step
                 step_num += 1
                 
-        # Calculate the accuracies on validation set and training set
-        train_accur = check_accuracy(train_loader, model, device)
-        valid_accur = check_accuracy(valid_loader, model, device)
-        step_nums.append(step_num)
-        train_accuracies.append(train_accur)
-        validation_accuracies.append(valid_accur)
-        info("Accuracy at step %d:\ntrain: %f\tvalid: %f" % (step_num, train_accur, valid_accur))
+            # Calculate the accuracies on validation set and training set
+            train_accur = check_accuracy(train_loader, model, device)
+            valid_accur = check_accuracy(valid_loader, model, device)
+            step_nums.append(step_num)
+            train_accuracies.append(train_accur)
+            validation_accuracies.append(valid_accur)
+            info("Accuracy at step %d:\ntrain: %f\tvalid: %f" % (step_num, train_accur, valid_accur))
 
-        if valid_accur > best_validation_accuracy and epoche > 1:
-            torch.save(model.state_dict(), MODEL_DIR + title)
+            if valid_accur > best_validation_accuracy and epoche > 1:
+                torch.save(model.state_dict(), MODEL_DIR + title + "|Accuracy: " + str(float(best_validation_accuracy)))
 
-        info("Epoche %d finished, time usage:%f" % (e, time.time() - start_time))
-        plot_valid_train_accu(step_nums, validation_accuracies, train_accuracies, title)
+    info("Epoche %d finished, time usage:%f" % (e, time.time() - start_time))
+    plot_valid_train_accu(step_nums, validation_accuracies, train_accuracies, title)
+
+    model.eval()
 
     return best_validation_accuracy
 
@@ -123,7 +124,7 @@ folds = K_fold(train_set, 10)
 
 best_validation_accuracy = 0
 for learning_rate in [1, 0.1, 0.01, 0.001, 0.0001]:
-    best_validation_accuracy = train_cnn(16, 10, learning_rate, folds, random.randomint(0, 9), best_validation_accuracy)
+    best_validation_accuracy = train_cnn(16, 10, learning_rate, folds, random.randint(0, 9), best_validation_accuracy)
 
 
 
