@@ -22,9 +22,9 @@ from utils import check_accuracy
 from utils import plot_valid_train_accu
 import random
 
-class CNN(nn.Module):
+class CNN_Stride(nn.Module):
     def __init__(self):
-        super(CNN, self).__init__()
+        super(CNN_Stride, self).__init__()
         self.conv1 = nn.Conv2d(
             in_channels=1,
             out_channels=32,
@@ -64,7 +64,7 @@ def train_cnn(batch_size, epoche, learning_rate, train_folds, val_index, best_va
     info("Device: " + str(device))
 
     # Initial the CNN model
-    model = CNN()
+    model = CNN_Stride()
     model.to(device)
     model.train()   # Switch model to train mode
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
