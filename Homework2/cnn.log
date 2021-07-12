@@ -1,0 +1,2352 @@
+INFO:root:Start epoche 0:
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.868833	valid: 0.824833
+INFO:root:Accuracy at step 751:
+train: 0.884833	valid: 0.843667
+INFO:root:Accuracy at step 1126:
+train: 0.890333	valid: 0.862167
+INFO:root:Accuracy at step 1501:
+train: 0.887667	valid: 0.857667
+INFO:root:Accuracy at step 1876:
+train: 0.901333	valid: 0.871833
+INFO:root:Accuracy at step 2251:
+train: 0.909000	valid: 0.869667
+INFO:root:Accuracy at step 2626:
+train: 0.895833	valid: 0.859167
+INFO:root:Accuracy at step 3001:
+train: 0.898667	valid: 0.862833
+INFO:root:Accuracy at step 3376:
+train: 0.889667	valid: 0.865833
+INFO:root:Epoche 0 finished, time usage:14.652087
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.897500	valid: 0.864833
+INFO:root:Accuracy at step 4126:
+train: 0.905333	valid: 0.867667
+INFO:root:Accuracy at step 4501:
+train: 0.905833	valid: 0.863167
+INFO:root:Accuracy at step 4876:
+train: 0.899500	valid: 0.867333
+INFO:root:Accuracy at step 5251:
+train: 0.907333	valid: 0.867500
+INFO:root:Accuracy at step 5626:
+train: 0.906167	valid: 0.856167
+INFO:root:Accuracy at step 6001:
+train: 0.901667	valid: 0.860333
+INFO:root:Accuracy at step 6376:
+train: 0.904000	valid: 0.868500
+INFO:root:Accuracy at step 6751:
+train: 0.896500	valid: 0.864500
+INFO:root:Epoche 1 finished, time usage:14.333618
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.913833	valid: 0.878167
+INFO:root:Accuracy at step 7501:
+train: 0.877833	valid: 0.858833
+INFO:root:Accuracy at step 7876:
+train: 0.888500	valid: 0.867167
+INFO:root:Accuracy at step 8251:
+train: 0.906000	valid: 0.875333
+INFO:root:Accuracy at step 8626:
+train: 0.899500	valid: 0.865500
+INFO:root:Accuracy at step 9001:
+train: 0.904500	valid: 0.864167
+INFO:root:Accuracy at step 9376:
+train: 0.909833	valid: 0.878167
+INFO:root:Accuracy at step 9751:
+train: 0.901833	valid: 0.868333
+INFO:root:Accuracy at step 10126:
+train: 0.907667	valid: 0.869833
+INFO:root:Epoche 2 finished, time usage:14.366996
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.906167	valid: 0.872167
+INFO:root:Accuracy at step 10876:
+train: 0.901333	valid: 0.877333
+INFO:root:Accuracy at step 11251:
+train: 0.893667	valid: 0.869833
+INFO:root:Accuracy at step 11626:
+train: 0.904667	valid: 0.872833
+INFO:root:Accuracy at step 12001:
+train: 0.913667	valid: 0.872000
+INFO:root:Accuracy at step 12376:
+train: 0.917667	valid: 0.876833
+INFO:root:Accuracy at step 12751:
+train: 0.912500	valid: 0.869500
+INFO:root:Accuracy at step 13126:
+train: 0.901000	valid: 0.864000
+INFO:root:Accuracy at step 13501:
+train: 0.903000	valid: 0.862667
+INFO:root:Epoche 3 finished, time usage:14.116450
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.912833	valid: 0.880000
+INFO:root:Accuracy at step 14251:
+train: 0.894333	valid: 0.867833
+INFO:root:Accuracy at step 14626:
+train: 0.899333	valid: 0.875667
+INFO:root:Accuracy at step 15001:
+train: 0.899500	valid: 0.871667
+INFO:root:Accuracy at step 15376:
+train: 0.902167	valid: 0.870167
+INFO:root:Accuracy at step 15751:
+train: 0.917000	valid: 0.889333
+INFO:root:Accuracy at step 16126:
+train: 0.914833	valid: 0.871833
+INFO:root:Accuracy at step 16501:
+train: 0.915500	valid: 0.879000
+INFO:root:Accuracy at step 16876:
+train: 0.892667	valid: 0.857333
+INFO:root:Epoche 4 finished, time usage:14.511779
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.881833	valid: 0.845667
+INFO:root:Accuracy at step 751:
+train: 0.892833	valid: 0.853167
+INFO:root:Accuracy at step 1126:
+train: 0.883333	valid: 0.852000
+INFO:root:Accuracy at step 1501:
+train: 0.881667	valid: 0.849667
+INFO:root:Accuracy at step 1876:
+train: 0.899000	valid: 0.857000
+INFO:root:Accuracy at step 2251:
+train: 0.905667	valid: 0.865000
+INFO:root:Accuracy at step 2626:
+train: 0.895667	valid: 0.866000
+INFO:root:Accuracy at step 3001:
+train: 0.882833	valid: 0.859667
+INFO:root:Accuracy at step 3376:
+train: 0.901333	valid: 0.877500
+INFO:root:Epoche 0 finished, time usage:14.693182
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.897167	valid: 0.858500
+INFO:root:Accuracy at step 4126:
+train: 0.899167	valid: 0.870167
+INFO:root:Accuracy at step 4501:
+train: 0.895333	valid: 0.861667
+INFO:root:Accuracy at step 4876:
+train: 0.903833	valid: 0.868833
+INFO:root:Accuracy at step 5251:
+train: 0.900500	valid: 0.867500
+INFO:root:Accuracy at step 5626:
+train: 0.910500	valid: 0.872000
+INFO:root:Accuracy at step 6001:
+train: 0.903167	valid: 0.876000
+INFO:root:Accuracy at step 6376:
+train: 0.891000	valid: 0.864333
+INFO:root:Accuracy at step 6751:
+train: 0.904667	valid: 0.870167
+INFO:root:Epoche 1 finished, time usage:14.065630
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.914500	valid: 0.885333
+INFO:root:Accuracy at step 7501:
+train: 0.899167	valid: 0.873000
+INFO:root:Accuracy at step 7876:
+train: 0.899500	valid: 0.869333
+INFO:root:Accuracy at step 8251:
+train: 0.914000	valid: 0.877000
+INFO:root:Accuracy at step 8626:
+train: 0.909500	valid: 0.872000
+INFO:root:Accuracy at step 9001:
+train: 0.908000	valid: 0.865333
+INFO:root:Accuracy at step 9376:
+train: 0.905667	valid: 0.866000
+INFO:root:Accuracy at step 9751:
+train: 0.887167	valid: 0.845167
+INFO:root:Accuracy at step 10126:
+train: 0.910667	valid: 0.871667
+INFO:root:Epoche 2 finished, time usage:14.200724
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.913667	valid: 0.872333
+INFO:root:Accuracy at step 10876:
+train: 0.893667	valid: 0.864000
+INFO:root:Accuracy at step 11251:
+train: 0.894333	valid: 0.871333
+INFO:root:Accuracy at step 11626:
+train: 0.910333	valid: 0.874833
+INFO:root:Accuracy at step 12001:
+train: 0.908833	valid: 0.871667
+INFO:root:Accuracy at step 12376:
+train: 0.906167	valid: 0.863167
+INFO:root:Accuracy at step 12751:
+train: 0.902833	valid: 0.866333
+INFO:root:Accuracy at step 13126:
+train: 0.903500	valid: 0.867833
+INFO:root:Accuracy at step 13501:
+train: 0.909500	valid: 0.875000
+INFO:root:Epoche 3 finished, time usage:14.161679
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.916167	valid: 0.881333
+INFO:root:Accuracy at step 14251:
+train: 0.915000	valid: 0.884667
+INFO:root:Accuracy at step 14626:
+train: 0.873333	valid: 0.847667
+INFO:root:Accuracy at step 15001:
+train: 0.902000	valid: 0.875000
+INFO:root:Accuracy at step 15376:
+train: 0.903667	valid: 0.871000
+INFO:root:Accuracy at step 15751:
+train: 0.914667	valid: 0.882667
+INFO:root:Accuracy at step 16126:
+train: 0.916000	valid: 0.881000
+INFO:root:Accuracy at step 16501:
+train: 0.918500	valid: 0.876667
+INFO:root:Accuracy at step 16876:
+train: 0.908167	valid: 0.869167
+INFO:root:Epoche 4 finished, time usage:13.958044
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.888000	valid: 0.848667
+INFO:root:Accuracy at step 751:
+train: 0.887500	valid: 0.841333
+INFO:root:Accuracy at step 1126:
+train: 0.890333	valid: 0.846167
+INFO:root:Accuracy at step 1501:
+train: 0.894167	valid: 0.858667
+INFO:root:Accuracy at step 1876:
+train: 0.900333	valid: 0.860500
+INFO:root:Accuracy at step 2251:
+train: 0.863500	valid: 0.825833
+INFO:root:Accuracy at step 2626:
+train: 0.903500	valid: 0.866167
+INFO:root:Accuracy at step 3001:
+train: 0.894333	valid: 0.862167
+INFO:root:Accuracy at step 3376:
+train: 0.908333	valid: 0.862500
+INFO:root:Epoche 0 finished, time usage:14.510825
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.900333	valid: 0.868000
+INFO:root:Accuracy at step 4126:
+train: 0.902833	valid: 0.858500
+INFO:root:Accuracy at step 4501:
+train: 0.882000	valid: 0.856000
+INFO:root:Accuracy at step 4876:
+train: 0.897000	valid: 0.863833
+INFO:root:Accuracy at step 5251:
+train: 0.883167	valid: 0.840167
+INFO:root:Accuracy at step 5626:
+train: 0.891167	valid: 0.847667
+INFO:root:Accuracy at step 6001:
+train: 0.909833	valid: 0.870333
+INFO:root:Accuracy at step 6376:
+train: 0.892333	valid: 0.854333
+INFO:root:Accuracy at step 6751:
+train: 0.915667	valid: 0.869333
+INFO:root:Epoche 1 finished, time usage:15.140466
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.901000	valid: 0.870667
+INFO:root:Accuracy at step 7501:
+train: 0.886833	valid: 0.868833
+INFO:root:Accuracy at step 7876:
+train: 0.895833	valid: 0.876000
+INFO:root:Accuracy at step 8251:
+train: 0.892333	valid: 0.863667
+INFO:root:Accuracy at step 8626:
+train: 0.903667	valid: 0.872667
+INFO:root:Accuracy at step 9001:
+train: 0.887500	valid: 0.857833
+INFO:root:Accuracy at step 9376:
+train: 0.907500	valid: 0.874000
+INFO:root:Accuracy at step 9751:
+train: 0.904333	valid: 0.875500
+INFO:root:Accuracy at step 10126:
+train: 0.915833	valid: 0.873000
+INFO:root:Epoche 2 finished, time usage:14.995671
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.912167	valid: 0.883833
+INFO:root:Accuracy at step 10876:
+train: 0.911500	valid: 0.880333
+INFO:root:Accuracy at step 11251:
+train: 0.897500	valid: 0.870333
+INFO:root:Accuracy at step 11626:
+train: 0.894500	valid: 0.856833
+INFO:root:Accuracy at step 12001:
+train: 0.913500	valid: 0.869667
+INFO:root:Accuracy at step 12376:
+train: 0.916667	valid: 0.883000
+INFO:root:Accuracy at step 12751:
+train: 0.920167	valid: 0.867500
+INFO:root:Accuracy at step 13126:
+train: 0.910500	valid: 0.870500
+INFO:root:Accuracy at step 13501:
+train: 0.920500	valid: 0.866667
+INFO:root:Epoche 3 finished, time usage:15.267139
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.920500	valid: 0.888667
+INFO:root:Accuracy at step 14251:
+train: 0.905667	valid: 0.877500
+INFO:root:Accuracy at step 14626:
+train: 0.908500	valid: 0.880833
+INFO:root:Accuracy at step 15001:
+train: 0.900667	valid: 0.871167
+INFO:root:Accuracy at step 15376:
+train: 0.904333	valid: 0.878000
+INFO:root:Accuracy at step 15751:
+train: 0.913000	valid: 0.870333
+INFO:root:Accuracy at step 16126:
+train: 0.916667	valid: 0.871667
+INFO:root:Accuracy at step 16501:
+train: 0.917667	valid: 0.882000
+INFO:root:Accuracy at step 16876:
+train: 0.918833	valid: 0.873667
+INFO:root:Epoche 4 finished, time usage:15.059625
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 100:
+train: 0.788500	valid: 0.758000
+INFO:root:Accuracy at step 200:
+train: 0.833833	valid: 0.809333
+INFO:root:Accuracy at step 300:
+train: 0.865833	valid: 0.827500
+INFO:root:Accuracy at step 400:
+train: 0.845333	valid: 0.846500
+INFO:root:Accuracy at step 500:
+train: 0.864500	valid: 0.835500
+INFO:root:Accuracy at step 600:
+train: 0.874000	valid: 0.842167
+INFO:root:Accuracy at step 700:
+train: 0.879167	valid: 0.828500
+INFO:root:Accuracy at step 800:
+train: 0.812333	valid: 0.806667
+INFO:root:Accuracy at step 900:
+train: 0.863333	valid: 0.839333
+INFO:root:Accuracy at step 1000:
+train: 0.879833	valid: 0.855167
+INFO:root:Accuracy at step 1100:
+train: 0.866000	valid: 0.830667
+INFO:root:Accuracy at step 1200:
+train: 0.856333	valid: 0.839333
+INFO:root:Accuracy at step 1300:
+train: 0.882000	valid: 0.856333
+INFO:root:Accuracy at step 1400:
+train: 0.801000	valid: 0.774667
+INFO:root:Accuracy at step 1500:
+train: 0.893167	valid: 0.851833
+INFO:root:Accuracy at step 1600:
+train: 0.869167	valid: 0.856500
+INFO:root:Accuracy at step 1700:
+train: 0.878500	valid: 0.852667
+INFO:root:Accuracy at step 1800:
+train: 0.898667	valid: 0.862333
+INFO:root:Accuracy at step 1900:
+train: 0.856167	valid: 0.842167
+INFO:root:Accuracy at step 2000:
+train: 0.844167	valid: 0.821333
+INFO:root:Accuracy at step 2100:
+train: 0.841667	valid: 0.810500
+INFO:root:Accuracy at step 2200:
+train: 0.893000	valid: 0.856833
+INFO:root:Accuracy at step 2300:
+train: 0.877000	valid: 0.862500
+INFO:root:Accuracy at step 2400:
+train: 0.882500	valid: 0.858333
+INFO:root:Accuracy at step 2500:
+train: 0.884167	valid: 0.854000
+INFO:root:Accuracy at step 2600:
+train: 0.897167	valid: 0.858667
+INFO:root:Accuracy at step 2700:
+train: 0.871167	valid: 0.858667
+INFO:root:Accuracy at step 2800:
+train: 0.880167	valid: 0.854667
+INFO:root:Accuracy at step 2900:
+train: 0.898167	valid: 0.860667
+INFO:root:Accuracy at step 3000:
+train: 0.872500	valid: 0.832667
+INFO:root:Accuracy at step 3100:
+train: 0.872500	valid: 0.850833
+INFO:root:Accuracy at step 3200:
+train: 0.886667	valid: 0.858667
+INFO:root:Accuracy at step 3300:
+train: 0.883667	valid: 0.857333
+INFO:root:Epoche 0 finished, time usage:35.363211
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3400:
+train: 0.871500	valid: 0.863333
+INFO:root:Accuracy at step 3500:
+train: 0.869833	valid: 0.854833
+INFO:root:Accuracy at step 3600:
+train: 0.885667	valid: 0.851667
+INFO:root:Accuracy at step 3700:
+train: 0.888500	valid: 0.853167
+INFO:root:Accuracy at step 3800:
+train: 0.872333	valid: 0.864333
+INFO:root:Accuracy at step 3900:
+train: 0.883667	valid: 0.854167
+INFO:root:Accuracy at step 4000:
+train: 0.896167	valid: 0.864167
+INFO:root:Accuracy at step 4100:
+train: 0.896500	valid: 0.855833
+INFO:root:Accuracy at step 4200:
+train: 0.883000	valid: 0.864667
+INFO:root:Accuracy at step 4300:
+train: 0.898500	valid: 0.868167
+INFO:root:Accuracy at step 4400:
+train: 0.880333	valid: 0.840000
+INFO:root:Accuracy at step 4500:
+train: 0.886500	valid: 0.849333
+INFO:root:Accuracy at step 4600:
+train: 0.878167	valid: 0.857667
+INFO:root:Accuracy at step 4700:
+train: 0.882000	valid: 0.858000
+INFO:root:Accuracy at step 4800:
+train: 0.901667	valid: 0.864833
+INFO:root:Accuracy at step 4900:
+train: 0.862000	valid: 0.853000
+INFO:root:Accuracy at step 5000:
+train: 0.889500	valid: 0.866667
+INFO:root:Accuracy at step 5100:
+train: 0.874000	valid: 0.852667
+INFO:root:Accuracy at step 5200:
+train: 0.894833	valid: 0.862333
+INFO:root:Accuracy at step 5300:
+train: 0.879500	valid: 0.865333
+INFO:root:Accuracy at step 5400:
+train: 0.893833	valid: 0.872500
+INFO:root:Accuracy at step 5500:
+train: 0.901167	valid: 0.875000
+INFO:root:Accuracy at step 5600:
+train: 0.907333	valid: 0.872667
+INFO:root:Accuracy at step 5700:
+train: 0.883667	valid: 0.864667
+INFO:root:Accuracy at step 5800:
+train: 0.895167	valid: 0.871667
+INFO:root:Accuracy at step 5900:
+train: 0.891000	valid: 0.859000
+INFO:root:Accuracy at step 6000:
+train: 0.910333	valid: 0.862333
+INFO:root:Accuracy at step 6100:
+train: 0.867333	valid: 0.848500
+INFO:root:Accuracy at step 6200:
+train: 0.887500	valid: 0.861000
+INFO:root:Accuracy at step 6300:
+train: 0.892000	valid: 0.856500
+INFO:root:Accuracy at step 6400:
+train: 0.875833	valid: 0.863333
+INFO:root:Accuracy at step 6500:
+train: 0.890833	valid: 0.865833
+INFO:root:Accuracy at step 6600:
+train: 0.897667	valid: 0.868000
+INFO:root:Accuracy at step 6700:
+train: 0.908667	valid: 0.862167
+INFO:root:Epoche 1 finished, time usage:37.160292
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 6800:
+train: 0.873833	valid: 0.855667
+INFO:root:Accuracy at step 6900:
+train: 0.893000	valid: 0.865000
+INFO:root:Accuracy at step 7000:
+train: 0.887833	valid: 0.855000
+INFO:root:Accuracy at step 7100:
+train: 0.901000	valid: 0.863333
+INFO:root:Accuracy at step 7200:
+train: 0.865500	valid: 0.841333
+INFO:root:Accuracy at step 7300:
+train: 0.901500	valid: 0.865833
+INFO:root:Accuracy at step 7400:
+train: 0.893333	valid: 0.861167
+INFO:root:Accuracy at step 7500:
+train: 0.911333	valid: 0.870667
+INFO:root:Accuracy at step 7600:
+train: 0.877667	valid: 0.859833
+INFO:root:Accuracy at step 7700:
+train: 0.891833	valid: 0.859167
+INFO:root:Accuracy at step 7800:
+train: 0.906833	valid: 0.869000
+INFO:root:Accuracy at step 7900:
+train: 0.878667	valid: 0.867000
+INFO:root:Accuracy at step 8000:
+train: 0.894500	valid: 0.866833
+INFO:root:Accuracy at step 8100:
+train: 0.894833	valid: 0.860333
+INFO:root:Accuracy at step 8200:
+train: 0.903833	valid: 0.862500
+INFO:root:Accuracy at step 8300:
+train: 0.889000	valid: 0.871333
+INFO:root:Accuracy at step 8400:
+train: 0.900167	valid: 0.869333
+INFO:root:Accuracy at step 8500:
+train: 0.894667	valid: 0.860833
+INFO:root:Accuracy at step 8600:
+train: 0.911667	valid: 0.867333
+INFO:root:Accuracy at step 8700:
+train: 0.880000	valid: 0.865167
+INFO:root:Accuracy at step 8800:
+train: 0.884833	valid: 0.851500
+INFO:root:Accuracy at step 8900:
+train: 0.899500	valid: 0.856000
+INFO:root:Accuracy at step 9000:
+train: 0.910000	valid: 0.871667
+INFO:root:Accuracy at step 9100:
+train: 0.895167	valid: 0.870500
+INFO:root:Accuracy at step 9200:
+train: 0.897167	valid: 0.857333
+INFO:root:Accuracy at step 9300:
+train: 0.903833	valid: 0.856167
+INFO:root:Accuracy at step 9400:
+train: 0.880833	valid: 0.868833
+INFO:root:Accuracy at step 9500:
+train: 0.875500	valid: 0.844833
+INFO:root:Accuracy at step 9600:
+train: 0.905000	valid: 0.866500
+INFO:root:Accuracy at step 9700:
+train: 0.903000	valid: 0.858667
+INFO:root:Accuracy at step 9800:
+train: 0.876333	valid: 0.855667
+INFO:root:Accuracy at step 9900:
+train: 0.896333	valid: 0.865833
+INFO:root:Accuracy at step 10000:
+train: 0.887000	valid: 0.846667
+INFO:root:Accuracy at step 10100:
+train: 0.897333	valid: 0.849667
+INFO:root:Epoche 2 finished, time usage:36.903329
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10200:
+train: 0.889667	valid: 0.868000
+INFO:root:Accuracy at step 10300:
+train: 0.865167	valid: 0.843167
+INFO:root:Accuracy at step 10400:
+train: 0.883000	valid: 0.846833
+INFO:root:Accuracy at step 10500:
+train: 0.902000	valid: 0.865000
+INFO:root:Accuracy at step 10600:
+train: 0.883667	valid: 0.851667
+INFO:root:Accuracy at step 10700:
+train: 0.895333	valid: 0.857333
+INFO:root:Accuracy at step 10800:
+train: 0.907667	valid: 0.864833
+INFO:root:Accuracy at step 10900:
+train: 0.875500	valid: 0.863667
+INFO:root:Accuracy at step 11000:
+train: 0.880333	valid: 0.864833
+INFO:root:Accuracy at step 11100:
+train: 0.892667	valid: 0.859167
+INFO:root:Accuracy at step 11200:
+train: 0.896333	valid: 0.865167
+INFO:root:Accuracy at step 11300:
+train: 0.888833	valid: 0.864333
+INFO:root:Accuracy at step 11400:
+train: 0.878833	valid: 0.850167
+INFO:root:Accuracy at step 11500:
+train: 0.910500	valid: 0.867333
+INFO:root:Accuracy at step 11600:
+train: 0.909833	valid: 0.864500
+INFO:root:Accuracy at step 11700:
+train: 0.891000	valid: 0.869333
+INFO:root:Accuracy at step 11800:
+train: 0.891333	valid: 0.856333
+INFO:root:Accuracy at step 11900:
+train: 0.909167	valid: 0.864833
+INFO:root:Accuracy at step 12000:
+train: 0.901667	valid: 0.856333
+INFO:root:Accuracy at step 12100:
+train: 0.890333	valid: 0.862000
+INFO:root:Accuracy at step 12200:
+train: 0.908500	valid: 0.866833
+INFO:root:Accuracy at step 12300:
+train: 0.901833	valid: 0.858000
+INFO:root:Accuracy at step 12400:
+train: 0.892000	valid: 0.870500
+INFO:root:Accuracy at step 12500:
+train: 0.895667	valid: 0.857667
+INFO:root:Accuracy at step 12600:
+train: 0.904000	valid: 0.855167
+INFO:root:Accuracy at step 12700:
+train: 0.907167	valid: 0.859333
+INFO:root:Accuracy at step 12800:
+train: 0.888833	valid: 0.859500
+INFO:root:Accuracy at step 12900:
+train: 0.895333	valid: 0.859833
+INFO:root:Accuracy at step 13000:
+train: 0.905500	valid: 0.858333
+INFO:root:Accuracy at step 13100:
+train: 0.914333	valid: 0.857500
+INFO:root:Accuracy at step 13200:
+train: 0.888667	valid: 0.863833
+INFO:root:Accuracy at step 13300:
+train: 0.900167	valid: 0.862000
+INFO:root:Accuracy at step 13400:
+train: 0.911167	valid: 0.862167
+INFO:root:Accuracy at step 13500:
+train: 0.907667	valid: 0.849333
+INFO:root:Epoche 3 finished, time usage:36.322173
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13600:
+train: 0.893500	valid: 0.868000
+INFO:root:Accuracy at step 13700:
+train: 0.898833	valid: 0.856167
+INFO:root:Accuracy at step 13800:
+train: 0.904667	valid: 0.860667
+INFO:root:Accuracy at step 13900:
+train: 0.876333	valid: 0.852167
+INFO:root:Accuracy at step 14000:
+train: 0.898667	valid: 0.866833
+INFO:root:Accuracy at step 14100:
+train: 0.893833	valid: 0.844833
+INFO:root:Accuracy at step 14200:
+train: 0.915833	valid: 0.869167
+INFO:root:Accuracy at step 14300:
+train: 0.874167	valid: 0.857833
+INFO:root:Accuracy at step 14400:
+train: 0.883500	valid: 0.853333
+INFO:root:Accuracy at step 14500:
+train: 0.895167	valid: 0.853833
+INFO:root:Accuracy at step 14600:
+train: 0.895167	valid: 0.856000
+INFO:root:Accuracy at step 14700:
+train: 0.881167	valid: 0.849833
+INFO:root:Accuracy at step 14800:
+train: 0.904833	valid: 0.864000
+INFO:root:Accuracy at step 14900:
+train: 0.887500	valid: 0.849000
+INFO:root:Accuracy at step 15000:
+train: 0.913000	valid: 0.864833
+INFO:root:Accuracy at step 15100:
+train: 0.900167	valid: 0.862167
+INFO:root:Accuracy at step 15200:
+train: 0.881667	valid: 0.843167
+INFO:root:Accuracy at step 15300:
+train: 0.911500	valid: 0.862000
+INFO:root:Accuracy at step 15400:
+train: 0.884667	valid: 0.857667
+INFO:root:Accuracy at step 15500:
+train: 0.899500	valid: 0.858167
+INFO:root:Accuracy at step 15600:
+train: 0.905833	valid: 0.863167
+INFO:root:Accuracy at step 15700:
+train: 0.914667	valid: 0.869833
+INFO:root:Accuracy at step 15800:
+train: 0.891333	valid: 0.859333
+INFO:root:Accuracy at step 15900:
+train: 0.907667	valid: 0.868167
+INFO:root:Accuracy at step 16000:
+train: 0.902167	valid: 0.855000
+INFO:root:Accuracy at step 16100:
+train: 0.891333	valid: 0.835167
+INFO:root:Accuracy at step 16200:
+train: 0.896500	valid: 0.861667
+INFO:root:Accuracy at step 16300:
+train: 0.900333	valid: 0.856500
+INFO:root:Accuracy at step 16400:
+train: 0.907333	valid: 0.855167
+INFO:root:Accuracy at step 16500:
+train: 0.913833	valid: 0.858500
+INFO:root:Accuracy at step 16600:
+train: 0.879167	valid: 0.842833
+INFO:root:Accuracy at step 16700:
+train: 0.888333	valid: 0.853500
+INFO:root:Accuracy at step 16800:
+train: 0.898000	valid: 0.853333
+INFO:root:Epoche 4 finished, time usage:35.487554
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.890167	valid: 0.847833
+INFO:root:Accuracy at step 751:
+train: 0.901667	valid: 0.866167
+INFO:root:Accuracy at step 1126:
+train: 0.904667	valid: 0.851833
+INFO:root:Accuracy at step 1501:
+train: 0.881667	valid: 0.848667
+INFO:root:Accuracy at step 1876:
+train: 0.874833	valid: 0.835667
+INFO:root:Accuracy at step 2251:
+train: 0.890833	valid: 0.865500
+INFO:root:Accuracy at step 2626:
+train: 0.885333	valid: 0.855333
+INFO:root:Accuracy at step 3001:
+train: 0.902500	valid: 0.867833
+INFO:root:Accuracy at step 3376:
+train: 0.898167	valid: 0.870333
+INFO:root:Epoche 0 finished, time usage:44.341053
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.904167	valid: 0.869167
+INFO:root:Accuracy at step 4126:
+train: 0.901333	valid: 0.863000
+INFO:root:Accuracy at step 4501:
+train: 0.914500	valid: 0.868500
+INFO:root:Accuracy at step 4876:
+train: 0.901667	valid: 0.861000
+INFO:root:Accuracy at step 5251:
+train: 0.903500	valid: 0.867000
+INFO:root:Accuracy at step 5626:
+train: 0.898667	valid: 0.866333
+INFO:root:Accuracy at step 6001:
+train: 0.902000	valid: 0.862667
+INFO:root:Accuracy at step 6376:
+train: 0.911000	valid: 0.865500
+INFO:root:Accuracy at step 6751:
+train: 0.878667	valid: 0.841000
+INFO:root:Epoche 1 finished, time usage:45.692200
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.885833	valid: 0.840167
+INFO:root:Accuracy at step 7501:
+train: 0.907833	valid: 0.862333
+INFO:root:Accuracy at step 7876:
+train: 0.906333	valid: 0.856167
+INFO:root:Accuracy at step 8251:
+train: 0.908833	valid: 0.866167
+INFO:root:Accuracy at step 8626:
+train: 0.906000	valid: 0.863833
+INFO:root:Accuracy at step 9001:
+train: 0.905833	valid: 0.872667
+INFO:root:Accuracy at step 9376:
+train: 0.893833	valid: 0.853833
+INFO:root:Accuracy at step 9751:
+train: 0.909500	valid: 0.869167
+INFO:root:Accuracy at step 10126:
+train: 0.899500	valid: 0.842500
+INFO:root:Epoche 2 finished, time usage:45.612916
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.899333	valid: 0.852333
+INFO:root:Accuracy at step 10876:
+train: 0.900000	valid: 0.855667
+INFO:root:Accuracy at step 11251:
+train: 0.885667	valid: 0.844000
+INFO:root:Accuracy at step 11626:
+train: 0.909000	valid: 0.861167
+INFO:root:Accuracy at step 12001:
+train: 0.911667	valid: 0.868500
+INFO:root:Accuracy at step 12376:
+train: 0.885333	valid: 0.847833
+INFO:root:Accuracy at step 12751:
+train: 0.915000	valid: 0.864333
+INFO:root:Accuracy at step 13126:
+train: 0.904000	valid: 0.861500
+INFO:root:Accuracy at step 13501:
+train: 0.914333	valid: 0.866000
+INFO:root:Epoche 3 finished, time usage:45.118367
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.912333	valid: 0.862667
+INFO:root:Accuracy at step 14251:
+train: 0.909500	valid: 0.868667
+INFO:root:Accuracy at step 14626:
+train: 0.924167	valid: 0.868500
+INFO:root:Accuracy at step 15001:
+train: 0.919333	valid: 0.856500
+INFO:root:Accuracy at step 15376:
+train: 0.912000	valid: 0.864833
+INFO:root:Accuracy at step 15751:
+train: 0.910000	valid: 0.864000
+INFO:root:Accuracy at step 16126:
+train: 0.918167	valid: 0.862000
+INFO:root:Accuracy at step 16501:
+train: 0.912667	valid: 0.862000
+INFO:root:Accuracy at step 16876:
+train: 0.917000	valid: 0.863000
+INFO:root:Epoche 4 finished, time usage:44.754892
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.859000	valid: 0.825000
+INFO:root:Accuracy at step 751:
+train: 0.905000	valid: 0.859333
+INFO:root:Accuracy at step 1126:
+train: 0.912000	valid: 0.857667
+INFO:root:Accuracy at step 1501:
+train: 0.901167	valid: 0.853500
+INFO:root:Accuracy at step 1876:
+train: 0.896167	valid: 0.843167
+INFO:root:Accuracy at step 2251:
+train: 0.904000	valid: 0.864333
+INFO:root:Accuracy at step 2626:
+train: 0.894500	valid: 0.848333
+INFO:root:Accuracy at step 3001:
+train: 0.897833	valid: 0.859167
+INFO:root:Accuracy at step 3376:
+train: 0.898167	valid: 0.859167
+INFO:root:Epoche 0 finished, time usage:45.046999
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.897667	valid: 0.863167
+INFO:root:Accuracy at step 4126:
+train: 0.905833	valid: 0.856833
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.890000	valid: 0.849167
+INFO:root:Accuracy at step 751:
+train: 0.894167	valid: 0.860333
+INFO:root:Accuracy at step 1126:
+train: 0.890833	valid: 0.854167
+INFO:root:Accuracy at step 1501:
+train: 0.890000	valid: 0.850500
+INFO:root:Accuracy at step 1876:
+train: 0.904167	valid: 0.867833
+INFO:root:Accuracy at step 2251:
+train: 0.893667	valid: 0.862667
+INFO:root:Accuracy at step 2626:
+train: 0.889833	valid: 0.865500
+INFO:root:Accuracy at step 3001:
+train: 0.895333	valid: 0.852167
+INFO:root:Accuracy at step 3376:
+train: 0.901333	valid: 0.876333
+INFO:root:Epoche 0 finished, time usage:14.640379
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.889500	valid: 0.850333
+INFO:root:Accuracy at step 4126:
+train: 0.880500	valid: 0.853167
+INFO:root:Accuracy at step 4501:
+train: 0.898000	valid: 0.868333
+INFO:root:Accuracy at step 4876:
+train: 0.889500	valid: 0.851000
+INFO:root:Accuracy at step 5251:
+train: 0.883667	valid: 0.847333
+INFO:root:Accuracy at step 5626:
+train: 0.902833	valid: 0.864500
+INFO:root:Accuracy at step 6001:
+train: 0.901667	valid: 0.871333
+INFO:root:Accuracy at step 6376:
+train: 0.882667	valid: 0.843500
+INFO:root:Accuracy at step 6751:
+train: 0.901000	valid: 0.875000
+INFO:root:Epoche 1 finished, time usage:14.426887
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.895500	valid: 0.860333
+INFO:root:Accuracy at step 7501:
+train: 0.907833	valid: 0.865833
+INFO:root:Accuracy at step 7876:
+train: 0.880333	valid: 0.845667
+INFO:root:Accuracy at step 8251:
+train: 0.905167	valid: 0.868333
+INFO:root:Accuracy at step 8626:
+train: 0.912833	valid: 0.872167
+INFO:root:Accuracy at step 9001:
+train: 0.886833	valid: 0.855500
+INFO:root:Accuracy at step 9376:
+train: 0.911500	valid: 0.870500
+INFO:root:Accuracy at step 9751:
+train: 0.890833	valid: 0.854333
+INFO:root:Accuracy at step 10126:
+train: 0.904333	valid: 0.862833
+INFO:root:Epoche 2 finished, time usage:14.980141
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.898000	valid: 0.859500
+INFO:root:Accuracy at step 10876:
+train: 0.909500	valid: 0.876000
+INFO:root:Accuracy at step 11251:
+train: 0.895667	valid: 0.869500
+INFO:root:Accuracy at step 11626:
+train: 0.880167	valid: 0.837500
+INFO:root:Accuracy at step 12001:
+train: 0.909000	valid: 0.867333
+INFO:root:Accuracy at step 12376:
+train: 0.894167	valid: 0.862333
+INFO:root:Accuracy at step 12751:
+train: 0.910833	valid: 0.873833
+INFO:root:Accuracy at step 13126:
+train: 0.912167	valid: 0.870500
+INFO:root:Accuracy at step 13501:
+train: 0.909167	valid: 0.875000
+INFO:root:Epoche 3 finished, time usage:14.411871
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.905167	valid: 0.858333
+INFO:root:Accuracy at step 14251:
+train: 0.913333	valid: 0.873667
+INFO:root:Accuracy at step 14626:
+train: 0.899333	valid: 0.857000
+INFO:root:Accuracy at step 15001:
+train: 0.909000	valid: 0.871500
+INFO:root:Accuracy at step 15376:
+train: 0.919333	valid: 0.877333
+INFO:root:Accuracy at step 15751:
+train: 0.921333	valid: 0.879833
+INFO:root:Accuracy at step 16126:
+train: 0.909000	valid: 0.867667
+INFO:root:Accuracy at step 16501:
+train: 0.910667	valid: 0.857000
+INFO:root:Accuracy at step 16876:
+train: 0.896333	valid: 0.866333
+INFO:root:Epoche 4 finished, time usage:14.478189
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.885167	valid: 0.843333
+INFO:root:Accuracy at step 751:
+train: 0.899000	valid: 0.876500
+INFO:root:Accuracy at step 1126:
+train: 0.884000	valid: 0.857500
+INFO:root:Accuracy at step 1501:
+train: 0.893667	valid: 0.861500
+INFO:root:Accuracy at step 1876:
+train: 0.903667	valid: 0.870333
+INFO:root:Accuracy at step 2251:
+train: 0.895000	valid: 0.880833
+INFO:root:Accuracy at step 2626:
+train: 0.905500	valid: 0.877500
+INFO:root:Accuracy at step 3001:
+train: 0.888167	valid: 0.869500
+INFO:root:Accuracy at step 3376:
+train: 0.895167	valid: 0.869667
+INFO:root:Epoche 0 finished, time usage:14.676090
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.899500	valid: 0.867333
+INFO:root:Accuracy at step 4126:
+train: 0.895667	valid: 0.864167
+INFO:root:Accuracy at step 4501:
+train: 0.906833	valid: 0.873500
+INFO:root:Accuracy at step 4876:
+train: 0.899667	valid: 0.874667
+INFO:root:Accuracy at step 5251:
+train: 0.900500	valid: 0.871000
+INFO:root:Accuracy at step 5626:
+train: 0.889667	valid: 0.864667
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.850667	valid: 0.815667
+INFO:root:Accuracy at step 751:
+train: 0.885333	valid: 0.841833
+INFO:root:Accuracy at step 1126:
+train: 0.867333	valid: 0.829000
+INFO:root:Accuracy at step 1501:
+train: 0.880667	valid: 0.838667
+INFO:root:Accuracy at step 1876:
+train: 0.890500	valid: 0.851000
+INFO:root:Accuracy at step 2251:
+train: 0.900333	valid: 0.857833
+INFO:root:Accuracy at step 2626:
+train: 0.898500	valid: 0.873167
+INFO:root:Accuracy at step 3001:
+train: 0.903833	valid: 0.858500
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.880667	valid: 0.833833
+INFO:root:Accuracy at step 751:
+train: 0.883167	valid: 0.848667
+INFO:root:Accuracy at step 1126:
+train: 0.882833	valid: 0.843667
+INFO:root:Accuracy at step 1501:
+train: 0.875333	valid: 0.842000
+INFO:root:Accuracy at step 1876:
+train: 0.887667	valid: 0.852333
+INFO:root:Accuracy at step 2251:
+train: 0.895500	valid: 0.859833
+INFO:root:Accuracy at step 2626:
+train: 0.901167	valid: 0.868500
+INFO:root:Accuracy at step 3001:
+train: 0.893500	valid: 0.855500
+INFO:root:Accuracy at step 3376:
+train: 0.899667	valid: 0.874833
+INFO:root:Epoche 0 finished, time usage:15.752558
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.889333	valid: 0.862667
+INFO:root:Accuracy at step 4126:
+train: 0.906833	valid: 0.866667
+INFO:root:Accuracy at step 4501:
+train: 0.883000	valid: 0.848667
+INFO:root:Accuracy at step 4876:
+train: 0.881000	valid: 0.841167
+INFO:root:Accuracy at step 5251:
+train: 0.900833	valid: 0.867000
+INFO:root:Accuracy at step 5626:
+train: 0.908000	valid: 0.871333
+INFO:root:Accuracy at step 6001:
+train: 0.907333	valid: 0.871167
+INFO:root:Accuracy at step 6376:
+train: 0.895500	valid: 0.861167
+INFO:root:Accuracy at step 6751:
+train: 0.898000	valid: 0.873500
+INFO:root:Epoche 1 finished, time usage:15.892004
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.890167	valid: 0.862500
+INFO:root:Accuracy at step 7501:
+train: 0.888167	valid: 0.858667
+INFO:root:Accuracy at step 7876:
+train: 0.902667	valid: 0.863500
+INFO:root:Accuracy at step 8251:
+train: 0.908333	valid: 0.867000
+INFO:root:Accuracy at step 8626:
+train: 0.900333	valid: 0.855333
+INFO:root:Accuracy at step 9001:
+train: 0.908000	valid: 0.860167
+INFO:root:Accuracy at step 9376:
+train: 0.899833	valid: 0.860500
+INFO:root:Accuracy at step 9751:
+train: 0.908333	valid: 0.868833
+INFO:root:Accuracy at step 10126:
+train: 0.908000	valid: 0.866833
+INFO:root:Epoche 2 finished, time usage:15.448956
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.905000	valid: 0.862833
+INFO:root:Accuracy at step 10876:
+train: 0.884167	valid: 0.846833
+INFO:root:Accuracy at step 11251:
+train: 0.908000	valid: 0.866833
+INFO:root:Accuracy at step 11626:
+train: 0.912500	valid: 0.866333
+INFO:root:Accuracy at step 12001:
+train: 0.914333	valid: 0.866667
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.882500	valid: 0.834167
+INFO:root:Accuracy at step 751:
+train: 0.897167	valid: 0.850000
+INFO:root:Accuracy at step 1126:
+train: 0.896667	valid: 0.856333
+INFO:root:Accuracy at step 1501:
+train: 0.890000	valid: 0.844500
+INFO:root:Accuracy at step 1876:
+train: 0.887333	valid: 0.846000
+INFO:root:Accuracy at step 2251:
+train: 0.902667	valid: 0.857500
+INFO:root:Accuracy at step 2626:
+train: 0.893167	valid: 0.855667
+INFO:root:Accuracy at step 3001:
+train: 0.891500	valid: 0.851000
+INFO:root:Accuracy at step 3376:
+train: 0.906667	valid: 0.861167
+INFO:root:Epoche 0 finished, time usage:15.442074
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.910000	valid: 0.859000
+INFO:root:Accuracy at step 4126:
+train: 0.895667	valid: 0.854500
+INFO:root:Accuracy at step 4501:
+train: 0.887333	valid: 0.857000
+INFO:root:Accuracy at step 4876:
+train: 0.893333	valid: 0.856833
+INFO:root:Accuracy at step 5251:
+train: 0.898667	valid: 0.862000
+INFO:root:Accuracy at step 5626:
+train: 0.896667	valid: 0.851500
+INFO:root:Accuracy at step 6001:
+train: 0.909500	valid: 0.858500
+INFO:root:Accuracy at step 6376:
+train: 0.891167	valid: 0.850500
+INFO:root:Accuracy at step 6751:
+train: 0.896833	valid: 0.856833
+INFO:root:Epoche 1 finished, time usage:15.607303
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.909833	valid: 0.867833
+INFO:root:Accuracy at step 7501:
+train: 0.908000	valid: 0.866000
+INFO:root:Accuracy at step 7876:
+train: 0.899167	valid: 0.863667
+INFO:root:Accuracy at step 8251:
+train: 0.901833	valid: 0.859167
+INFO:root:Accuracy at step 8626:
+train: 0.901667	valid: 0.862500
+INFO:root:Accuracy at step 9001:
+train: 0.910667	valid: 0.865833
+INFO:root:Accuracy at step 9376:
+train: 0.908500	valid: 0.863167
+INFO:root:Accuracy at step 9751:
+train: 0.913667	valid: 0.869333
+INFO:root:Accuracy at step 10126:
+train: 0.914167	valid: 0.867000
+INFO:root:Epoche 2 finished, time usage:15.862398
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.912833	valid: 0.866167
+INFO:root:Accuracy at step 10876:
+train: 0.908333	valid: 0.852833
+INFO:root:Accuracy at step 11251:
+train: 0.902500	valid: 0.869000
+INFO:root:Accuracy at step 11626:
+train: 0.905000	valid: 0.857667
+INFO:root:Accuracy at step 12001:
+train: 0.880833	valid: 0.838167
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.869667	valid: 0.835000
+INFO:root:Accuracy at step 751:
+train: 0.896667	valid: 0.857833
+INFO:root:Accuracy at step 1126:
+train: 0.898500	valid: 0.863667
+INFO:root:Accuracy at step 1501:
+train: 0.893000	valid: 0.845333
+INFO:root:Accuracy at step 1876:
+train: 0.897167	valid: 0.861500
+INFO:root:Accuracy at step 2251:
+train: 0.897667	valid: 0.865667
+INFO:root:Accuracy at step 2626:
+train: 0.887667	valid: 0.857000
+INFO:root:Accuracy at step 3001:
+train: 0.903500	valid: 0.868833
+INFO:root:Accuracy at step 3376:
+train: 0.901667	valid: 0.869833
+INFO:root:Epoche 0 finished, time usage:15.802334
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.894500	valid: 0.852167
+INFO:root:Accuracy at step 4126:
+train: 0.899333	valid: 0.867667
+INFO:root:Accuracy at step 4501:
+train: 0.892667	valid: 0.858000
+INFO:root:Accuracy at step 4876:
+train: 0.910000	valid: 0.875333
+INFO:root:Accuracy at step 5251:
+train: 0.891333	valid: 0.851333
+INFO:root:Accuracy at step 5626:
+train: 0.910000	valid: 0.875667
+INFO:root:Accuracy at step 6001:
+train: 0.896167	valid: 0.865000
+INFO:root:Accuracy at step 6376:
+train: 0.911333	valid: 0.874333
+INFO:root:Accuracy at step 6751:
+train: 0.895667	valid: 0.862833
+INFO:root:Epoche 1 finished, time usage:15.581798
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.895167	valid: 0.858500
+INFO:root:Accuracy at step 7501:
+train: 0.900833	valid: 0.863667
+INFO:root:Accuracy at step 7876:
+train: 0.914333	valid: 0.873000
+INFO:root:Accuracy at step 8251:
+train: 0.906333	valid: 0.869667
+INFO:root:Accuracy at step 8626:
+train: 0.904667	valid: 0.863667
+INFO:root:Accuracy at step 9001:
+train: 0.907000	valid: 0.857833
+INFO:root:Accuracy at step 9376:
+train: 0.895500	valid: 0.857500
+INFO:root:Accuracy at step 9751:
+train: 0.898833	valid: 0.856333
+INFO:root:Accuracy at step 10126:
+train: 0.898333	valid: 0.865500
+INFO:root:Epoche 2 finished, time usage:15.582083
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.907500	valid: 0.869833
+INFO:root:Accuracy at step 10876:
+train: 0.890833	valid: 0.853667
+INFO:root:Accuracy at step 11251:
+train: 0.905500	valid: 0.863000
+INFO:root:Accuracy at step 11626:
+train: 0.914000	valid: 0.868667
+INFO:root:Accuracy at step 12001:
+train: 0.922500	valid: 0.875333
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.904000	valid: 0.844167
+INFO:root:Accuracy at step 751:
+train: 0.874667	valid: 0.829500
+INFO:root:Accuracy at step 1126:
+train: 0.875500	valid: 0.831000
+INFO:root:Accuracy at step 1501:
+train: 0.882167	valid: 0.840333
+INFO:root:Accuracy at step 1876:
+train: 0.886500	valid: 0.852333
+INFO:root:Accuracy at step 2251:
+train: 0.864667	valid: 0.825833
+INFO:root:Accuracy at step 2626:
+train: 0.895500	valid: 0.845667
+INFO:root:Accuracy at step 3001:
+train: 0.897667	valid: 0.849333
+INFO:root:Accuracy at step 3376:
+train: 0.891167	valid: 0.853000
+INFO:root:Epoche 0 finished, time usage:16.202522
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.915667	valid: 0.862500
+INFO:root:Accuracy at step 4126:
+train: 0.896500	valid: 0.849333
+INFO:root:Accuracy at step 4501:
+train: 0.833500	valid: 0.801500
+INFO:root:Accuracy at step 4876:
+train: 0.892167	valid: 0.858333
+INFO:root:Accuracy at step 5251:
+train: 0.906167	valid: 0.863833
+INFO:root:Accuracy at step 5626:
+train: 0.904000	valid: 0.855667
+INFO:root:Accuracy at step 6001:
+train: 0.898500	valid: 0.854000
+INFO:root:Accuracy at step 6376:
+train: 0.904167	valid: 0.857333
+INFO:root:Accuracy at step 6751:
+train: 0.894333	valid: 0.851333
+INFO:root:Epoche 1 finished, time usage:17.195673
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.904833	valid: 0.852667
+INFO:root:Accuracy at step 7501:
+train: 0.899333	valid: 0.846667
+INFO:root:Accuracy at step 7876:
+train: 0.917833	valid: 0.864167
+INFO:root:Accuracy at step 8251:
+train: 0.900167	valid: 0.857333
+INFO:root:Accuracy at step 8626:
+train: 0.911000	valid: 0.859333
+INFO:root:Accuracy at step 9001:
+train: 0.900167	valid: 0.856500
+INFO:root:Accuracy at step 9376:
+train: 0.905000	valid: 0.852167
+INFO:root:Accuracy at step 9751:
+train: 0.913500	valid: 0.865667
+INFO:root:Accuracy at step 10126:
+train: 0.910667	valid: 0.867167
+INFO:root:Epoche 2 finished, time usage:16.284796
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.918500	valid: 0.862500
+INFO:root:Accuracy at step 10876:
+train: 0.911833	valid: 0.859500
+INFO:root:Accuracy at step 11251:
+train: 0.924000	valid: 0.861167
+INFO:root:Accuracy at step 11626:
+train: 0.894333	valid: 0.847333
+INFO:root:Accuracy at step 12001:
+train: 0.919667	valid: 0.866333
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.889167	valid: 0.846500
+INFO:root:Accuracy at step 751:
+train: 0.882833	valid: 0.845167
+INFO:root:Accuracy at step 1126:
+train: 0.863167	valid: 0.832667
+INFO:root:Accuracy at step 1501:
+train: 0.863000	valid: 0.830167
+INFO:root:Accuracy at step 1876:
+train: 0.894000	valid: 0.857500
+INFO:root:Accuracy at step 2251:
+train: 0.897667	valid: 0.867667
+INFO:root:Accuracy at step 2626:
+train: 0.897167	valid: 0.861833
+INFO:root:Accuracy at step 3001:
+train: 0.882500	valid: 0.857167
+INFO:root:Accuracy at step 3376:
+train: 0.893000	valid: 0.869167
+INFO:root:Epoche 0 finished, time usage:16.014619
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.899833	valid: 0.864667
+INFO:root:Accuracy at step 4126:
+train: 0.899500	valid: 0.859167
+INFO:root:Accuracy at step 4501:
+train: 0.898000	valid: 0.864000
+INFO:root:Accuracy at step 4876:
+train: 0.918000	valid: 0.871500
+INFO:root:Accuracy at step 5251:
+train: 0.894000	valid: 0.857500
+INFO:root:Accuracy at step 5626:
+train: 0.898667	valid: 0.865167
+INFO:root:Accuracy at step 6001:
+train: 0.913333	valid: 0.872167
+INFO:root:Accuracy at step 6376:
+train: 0.910333	valid: 0.869000
+INFO:root:Accuracy at step 6751:
+train: 0.903000	valid: 0.871167
+INFO:root:Epoche 1 finished, time usage:15.786229
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.905833	valid: 0.867333
+INFO:root:Accuracy at step 7501:
+train: 0.910500	valid: 0.870333
+INFO:root:Accuracy at step 7876:
+train: 0.913333	valid: 0.867500
+INFO:root:Accuracy at step 8251:
+train: 0.918167	valid: 0.869833
+INFO:root:Accuracy at step 8626:
+train: 0.904000	valid: 0.858333
+INFO:root:Accuracy at step 9001:
+train: 0.903500	valid: 0.863333
+INFO:root:Accuracy at step 9376:
+train: 0.906500	valid: 0.863000
+INFO:root:Accuracy at step 9751:
+train: 0.905667	valid: 0.863667
+INFO:root:Accuracy at step 10126:
+train: 0.907667	valid: 0.874667
+INFO:root:Epoche 2 finished, time usage:15.634188
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.899667	valid: 0.866000
+INFO:root:Accuracy at step 10876:
+train: 0.916333	valid: 0.870833
+INFO:root:Accuracy at step 11251:
+train: 0.904667	valid: 0.861500
+INFO:root:Accuracy at step 11626:
+train: 0.908500	valid: 0.862667
+INFO:root:Accuracy at step 12001:
+train: 0.920000	valid: 0.865833
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.879333	valid: 0.839833
+INFO:root:Accuracy at step 751:
+train: 0.863500	valid: 0.842000
+INFO:root:Accuracy at step 1126:
+train: 0.892167	valid: 0.852167
+INFO:root:Accuracy at step 1501:
+train: 0.894167	valid: 0.864167
+INFO:root:Accuracy at step 1876:
+train: 0.885500	valid: 0.856333
+INFO:root:Accuracy at step 2251:
+train: 0.900333	valid: 0.874833
+INFO:root:Accuracy at step 2626:
+train: 0.898167	valid: 0.873000
+INFO:root:Accuracy at step 3001:
+train: 0.897000	valid: 0.871167
+INFO:root:Accuracy at step 3376:
+train: 0.883333	valid: 0.858333
+INFO:root:Epoche 0 finished, time usage:15.958716
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.901500	valid: 0.878833
+INFO:root:Accuracy at step 4126:
+train: 0.893333	valid: 0.867333
+INFO:root:Accuracy at step 4501:
+train: 0.912167	valid: 0.872000
+INFO:root:Accuracy at step 4876:
+train: 0.898833	valid: 0.871833
+INFO:root:Accuracy at step 5251:
+train: 0.898167	valid: 0.864000
+INFO:root:Accuracy at step 5626:
+train: 0.901167	valid: 0.866167
+INFO:root:Accuracy at step 6001:
+train: 0.910000	valid: 0.877333
+INFO:root:Accuracy at step 6376:
+train: 0.899000	valid: 0.870500
+INFO:root:Accuracy at step 6751:
+train: 0.910667	valid: 0.879833
+INFO:root:Epoche 1 finished, time usage:15.790138
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.905000	valid: 0.872667
+INFO:root:Accuracy at step 7501:
+train: 0.898833	valid: 0.869833
+INFO:root:Accuracy at step 7876:
+train: 0.905500	valid: 0.871000
+INFO:root:Accuracy at step 8251:
+train: 0.871333	valid: 0.830500
+INFO:root:Accuracy at step 8626:
+train: 0.877167	valid: 0.848667
+INFO:root:Accuracy at step 9001:
+train: 0.904167	valid: 0.868000
+INFO:root:Accuracy at step 9376:
+train: 0.897333	valid: 0.870167
+INFO:root:Accuracy at step 9751:
+train: 0.895500	valid: 0.866000
+INFO:root:Accuracy at step 10126:
+train: 0.902833	valid: 0.876667
+INFO:root:Epoche 2 finished, time usage:15.365364
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.898833	valid: 0.863833
+INFO:root:Accuracy at step 10876:
+train: 0.905000	valid: 0.875667
+INFO:root:Accuracy at step 11251:
+train: 0.907833	valid: 0.868000
+INFO:root:Accuracy at step 11626:
+train: 0.903000	valid: 0.865500
+INFO:root:Accuracy at step 12001:
+train: 0.911833	valid: 0.864833
+INFO:root:Accuracy at step 12376:
+train: 0.915167	valid: 0.881000
+INFO:root:Accuracy at step 12751:
+train: 0.900333	valid: 0.875667
+INFO:root:Accuracy at step 13126:
+train: 0.878000	valid: 0.847667
+INFO:root:Accuracy at step 13501:
+train: 0.918167	valid: 0.878333
+INFO:root:Epoche 3 finished, time usage:15.353769
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.920833	valid: 0.878167
+INFO:root:Accuracy at step 14251:
+train: 0.905000	valid: 0.882500
+INFO:root:Accuracy at step 14626:
+train: 0.892333	valid: 0.853500
+INFO:root:Accuracy at step 15001:
+train: 0.910833	valid: 0.869167
+INFO:root:Accuracy at step 15376:
+train: 0.919833	valid: 0.878333
+INFO:root:Accuracy at step 15751:
+train: 0.906167	valid: 0.870833
+INFO:root:Accuracy at step 16126:
+train: 0.916000	valid: 0.874167
+INFO:root:Accuracy at step 16501:
+train: 0.908000	valid: 0.870000
+INFO:root:Accuracy at step 16876:
+train: 0.907167	valid: 0.868167
+INFO:root:Epoche 4 finished, time usage:15.450873
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.887333	valid: 0.836333
+INFO:root:Accuracy at step 751:
+train: 0.887167	valid: 0.834333
+INFO:root:Accuracy at step 1126:
+train: 0.869000	valid: 0.822000
+INFO:root:Accuracy at step 1501:
+train: 0.897833	valid: 0.859500
+INFO:root:Accuracy at step 1876:
+train: 0.893667	valid: 0.840167
+INFO:root:Accuracy at step 2251:
+train: 0.889667	valid: 0.845833
+INFO:root:Accuracy at step 2626:
+train: 0.888000	valid: 0.847167
+INFO:root:Accuracy at step 3001:
+train: 0.890333	valid: 0.850333
+INFO:root:Accuracy at step 3376:
+train: 0.882833	valid: 0.848667
+INFO:root:Epoche 0 finished, time usage:15.782030
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.904167	valid: 0.861000
+INFO:root:Accuracy at step 4126:
+train: 0.888667	valid: 0.846167
+INFO:root:Accuracy at step 4501:
+train: 0.908833	valid: 0.859833
+INFO:root:Accuracy at step 4876:
+train: 0.902667	valid: 0.856333
+INFO:root:Accuracy at step 5251:
+train: 0.902333	valid: 0.844833
+INFO:root:Accuracy at step 5626:
+train: 0.872833	valid: 0.843667
+INFO:root:Accuracy at step 6001:
+train: 0.896167	valid: 0.845000
+INFO:root:Accuracy at step 6376:
+train: 0.907333	valid: 0.857500
+INFO:root:Accuracy at step 6751:
+train: 0.901167	valid: 0.856333
+INFO:root:Epoche 1 finished, time usage:15.873209
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.903000	valid: 0.858000
+INFO:root:Accuracy at step 7501:
+train: 0.907333	valid: 0.859333
+INFO:root:Accuracy at step 7876:
+train: 0.898167	valid: 0.854667
+INFO:root:Accuracy at step 8251:
+train: 0.901500	valid: 0.859500
+INFO:root:Accuracy at step 8626:
+train: 0.919667	valid: 0.861833
+INFO:root:Accuracy at step 9001:
+train: 0.895167	valid: 0.853000
+INFO:root:Accuracy at step 9376:
+train: 0.915500	valid: 0.860500
+INFO:root:Accuracy at step 9751:
+train: 0.916333	valid: 0.862667
+INFO:root:Accuracy at step 10126:
+train: 0.884500	valid: 0.847667
+INFO:root:Epoche 2 finished, time usage:15.917975
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.911500	valid: 0.866000
+INFO:root:Accuracy at step 10876:
+train: 0.904333	valid: 0.860000
+INFO:root:Accuracy at step 11251:
+train: 0.914833	valid: 0.863667
+INFO:root:Accuracy at step 11626:
+train: 0.905167	valid: 0.861500
+INFO:root:Accuracy at step 12001:
+train: 0.912500	valid: 0.859000
+DEBUG:matplotlib:(private) matplotlib data path: /home/tai/miniconda3/envs/XDF/lib/python3.7/site-packages/matplotlib/mpl-data
+DEBUG:matplotlib:matplotlib data path: /home/tai/miniconda3/envs/XDF/lib/python3.7/site-packages/matplotlib/mpl-data
+DEBUG:matplotlib:CONFIGDIR=/home/tai/.config/matplotlib
+DEBUG:matplotlib:matplotlib version 3.3.4
+DEBUG:matplotlib:interactive is False
+DEBUG:matplotlib:platform is linux
+DEBUG:matplotlib:loaded modules: ['sys', 'builtins', '_frozen_importlib', '_imp', '_thread', '_warnings', '_weakref', 'zipimport', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_abc', 'site', 'os', 'stat', '_stat', '_collections_abc', 'posixpath', 'genericpath', 'os.path', '_sitebuiltins', '_bootlocale', '_locale', 'types', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'functools', '_functools', 'google', 'google.cloud', 'google.logging', 'mpl_toolkits', 'torch', 'platform', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'subprocess', 'time', 'signal', 'errno', '_posixsubprocess', 'select', 'selectors', 'collections.abc', 'math', 'threading', 'traceback', 'linecache', 'tokenize', 'token', '_weakrefset', 'textwrap', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'torch._utils', 'typing', 'typing.io', 'typing.re', 'torch._utils_internal', 'inspect', 'dis', 'opcode', '_opcode', 'tempfile', 'shutil', 'fnmatch', 'zlib', 'bz2', '_compression', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'random', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'weakref', 'torch.version', 'torch._six', 'torch._C._onnx', 'torch._C._jit', 'torch._C._jit_tree_views', 'torch._C._te', 'torch._C.cpp', 'torch._C.cpp.nn', 'torch._C._cudart', 'torch._C._nvtx', 'torch._C._cudnn', 'torch._C', 'torch._C._fft', 'torch._C._fx', 'torch._C._linalg', 'torch._C._nn', 'torch._C._special', 'torch._tensor', 'numbers', 'torch._namedtensor_internals', 'torch.overrides', '__future__', 'torch.utils', 'torch.utils.throughput_benchmark', 'torch.utils._crash_handler', 'pathlib', 'ntpath', 'urllib', 'urllib.parse', 'torch.utils.hooks', 'torch.storage', 'torch.random', 'torch.serialization', 'difflib', 'tarfile', 'copy', 'torch.types', 'pickle', '_compat_pickle', '_pickle', 'torch._tensor_str', 'torch.cuda', 'torch.cuda._utils', 'torch.cuda.streams', 'torch.cuda.memory', 'torch.cuda.random', 'torch.cuda.sparse', 'torch.cuda.profiler', 'torch.cuda.nvtx', 'torch.cuda.amp', 'torch.cuda.amp.autocast_mode', 'numpy', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'mkl', 'mkl._mklinit', 'mkl._py_mkl_service', 'cython_runtime', 'six', 'numpy.core', 'numpy.core.multiarray', 'numpy.core.overrides', 'datetime', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'numpy.core.umath', 'numpy.core.numerictypes', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core.shape_base', 'numpy.core._asarray', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core._exceptions', 'numpy.core._ufunc_config', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy.core._internal', 'ast', '_ast', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.mixins', 'numpy.lib.scimath', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'numpy.linalg', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.polynomial', 'numpy.lib.utils', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'numpy.lib.format', 'numpy.lib._datasource', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft._pocketfft', 'numpy.fft._pocketfft_internal', 'numpy.fft.helper', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random._pickle', 'numpy.random.mtrand', 'numpy.random.bit_generator', '_cython_0_29_21', 'numpy.random._common', 'secrets', 'base64', 'binascii', 'hmac', 'numpy.random._bounded_integers', 'numpy.random._mt19937', 'numpy.random._philox', 'numpy.random._pcg64', 'numpy.random._sfc64', 'numpy.random._generator', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'numpy.ma.extras', 'torch.cuda.amp.common', 'torch.cuda.amp.grad_scaler', 'torch.sparse', 'torch.functional', 'torch.nn', 'torch.nn.modules', 'torch.nn.modules.module', 'torch.nn.parameter', 'torch.nn.modules.linear', 'torch.nn.functional', 'torch._VF', 'torch._torch_docs', 'torch._jit_internal', 'torch.distributed', 'torch._C._distributed_c10d', 'torch.distributed.distributed_c10d', 'logging', 'string', '_string', 'atexit', 'torch.distributed.constants', 'torch.distributed.rendezvous', 'torch.distributed.rpc', 'torch._C._distributed_rpc', 'torch.distributed.rpc.api', 'torch.futures', 'torch.distributed.rpc.internal', 'torch.distributed.rpc.constants', 'torch.distributed.rpc.backend_registry', 'torch.distributed.rpc.functions', 'torch.distributed.autograd', 'torch._C._distributed_autograd', 'torch.distributed.rpc.options', 'torch.distributed.rpc.server_process_global_profiler', 'torch.autograd', 'torch.autograd.variable', 'torch.autograd.function', 'torch.autograd.gradcheck', 'torch.testing', 'torch.testing._core', 'cmath', 'torch.testing._asserts', 'torch.testing._check_kernel_launches', 'torch._vmap_internals', 'torch.utils._pytree', 'torch.autograd.grad_mode', 'torch.autograd.anomaly_mode', 'torch.autograd.functional', 'torch.autograd.forward_ad', 'torch._C._autograd', 'torch.autograd.profiler', 'torch.package', 'torch.package.analyze', 'torch.package.analyze.trace_dependencies', 'torch.package.analyze.is_from_package', 'torch.package._mangling', 'torch.package.file_structure_representation', 'torch.package.glob_group', 'torch.package.importer', 'torch.package.package_exporter', 'pickletools', 'dataclasses', 'torch.package._digraph', 'torch.package._importlib', 'torch.package._package_pickler', 'torch.package._stdlib', 'torch.package.find_file_dependencies', 'torch.package.package_importer', 'torch.package._mock_zipreader', 'glob', 'torch.package._package_unpickler', 'typing_extensions', 'torch.nn._reduction', 'torch.nn.grad', 'torch.nn.modules.utils', 'torch.nn.init', 'torch.nn.modules.lazy', 'torch.nn.modules.conv', 'torch.nn.common_types', 'torch.nn.modules.activation', 'torch.nn.modules.loss', 'torch.nn.modules.distance', 'torch.nn.modules.container', 'torch.nn.modules.pooling', 'torch.nn.modules.batchnorm', 'torch.nn.modules._functions', 'torch.nn.modules.instancenorm', 'torch.nn.modules.normalization', 'torch.nn.modules.dropout', 'torch.nn.modules.padding', 'torch.nn.modules.sparse', 'torch.nn.modules.rnn', 'torch.nn.utils', 'torch.nn.utils.rnn', 'torch.nn.utils.clip_grad', 'torch.nn.utils.weight_norm', 'torch.nn.utils.convert_parameters', 'torch.nn.utils.spectral_norm', 'torch.nn.utils.fusion', 'torch.nn.utils.memory_format', 'torch.nn.utils.parametrizations', 'torch.nn.utils.parametrize', 'torch.nn.modules.pixelshuffle', 'torch.nn.modules.upsampling', 'torch.nn.modules.fold', 'torch.nn.modules.adaptive', 'torch.nn.modules.transformer', 'torch.nn.modules.flatten', 'torch.nn.modules.channelshuffle', 'torch.nn.parallel', 'torch.nn.parallel.parallel_apply', 'torch.nn.parallel.replicate', 'torch.nn.parallel.comm', 'torch.cuda.nccl', 'torch.nn.parallel.data_parallel', 'torch.nn.parallel.scatter_gather', 'torch.nn.parallel._functions', 'torch.nn.parallel.distributed', 'torch._lowrank', 'torch._linalg_utils', 'torch._autograd_functions', 'torch.fft', 'torch.nn.intrinsic', 'torch.nn.intrinsic.modules', 'torch.nn.intrinsic.modules.fused', 'torch.nn.quantizable', 'torch.nn.quantizable.modules', 'torch.nn.quantizable.modules.activation', 'torch.nn.quantized', 'torch.nn.quantized.modules', 'torch.nn.quantized.modules.activation', 'torch.nn.quantized.functional', 'torch.nn.quantized.modules.utils', 'torch.jit', 'torch.jit._script', 'torch.jit._recursive', 'torch.jit.frontend', 'torch.jit._monkeytype_config', 'torch.jit.annotations', 'torch.jit._state', 'torch.jit._builtins', 'torch.backends', 'torch.backends.cudnn', 'torch.jit._check', 'torch.jit._fuser', 'torch.jit._serialization', 'torch.jit._trace', 'torch.jit._async', 'torch.jit._freeze', 'torch.nn.quantized.modules.batchnorm', 'torch.nn.quantized.modules.normalization', 'torch.nn.quantized.modules.conv', 'torch.nn.intrinsic.qat', 'torch.nn.intrinsic.qat.modules', 'torch.nn.intrinsic.qat.modules.linear_relu', 'torch.nn.qat', 'torch.nn.qat.modules', 'torch.nn.qat.modules.linear', 'torch.nn.qat.modules.conv', 'torch.nn.intrinsic.qat.modules.conv_fused', 'torch._ops', 'torch.nn.quantized.modules.linear', 'torch.nn.quantized.modules.embedding_ops', 'torch.nn.quantized.modules.functional_modules', 'torch.nn.quantizable.modules.rnn', 'torch.optim', 'torch.optim.adadelta', 'torch.optim._functional', 'torch.optim.optimizer', 'torch.optim.adagrad', 'torch.optim.adam', 'torch.optim.adamw', 'torch.optim.sparse_adam', 'torch.optim.adamax', 'torch.optim.asgd', 'torch.optim.sgd', 'torch.optim.rprop', 'torch.optim.rmsprop', 'torch.optim.lbfgs', 'torch.optim.lr_scheduler', 'torch.optim.swa_utils', 'torch.optim._multi_tensor', 'torch.optim._multi_tensor.adam', 'torch.optim._multi_tensor.adamw', 'torch.optim._multi_tensor.sgd', 'torch.optim._multi_tensor.rmsprop', 'torch.optim._multi_tensor.rprop', 'torch.optim._multi_tensor.asgd', 'torch.optim._multi_tensor.adamax', 'torch.optim._multi_tensor.adadelta', 'torch.multiprocessing', 'torch.multiprocessing.reductions', 'multiprocessing', 'multiprocessing.context', 'multiprocessing.process', 'multiprocessing.reduction', 'socket', '_socket', 'array', '__mp_main__', 'multiprocessing.util', 'multiprocessing.resource_sharer', 'torch.multiprocessing.spawn', 'multiprocessing.connection', '_multiprocessing', 'torch.special', 'torch.utils.backcompat', 'torch.onnx', 'torch.linalg', 'torch.hub', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'zipfile', 'urllib.request', 'email', 'http', 'http.client', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'email._parseaddr', 'calendar', 'locale', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'ssl', '_ssl', 'urllib.error', 'urllib.response', 'tqdm', 'tqdm._monitor', 'tqdm._tqdm_pandas', 'tqdm.cli', 'tqdm.std', 'tqdm.utils', 'unicodedata', 'tqdm.version', 'tqdm._dist_ver', 'tqdm.gui', 'tqdm.auto', 'tqdm.autonotebook', 'tqdm.asyncio', 'asyncio', 'asyncio.base_events', 'concurrent', 'concurrent.futures', 'concurrent.futures._base', 'asyncio.constants', 'asyncio.coroutines', 'asyncio.base_futures', 'asyncio.format_helpers', 'asyncio.log', 'asyncio.events', 'contextvars', '_contextvars', 'asyncio.base_tasks', '_asyncio', 'asyncio.futures', 'asyncio.protocols', 'asyncio.sslproto', 'asyncio.transports', 'asyncio.tasks', 'asyncio.locks', 'asyncio.runners', 'asyncio.queues', 'asyncio.streams', 'asyncio.subprocess', 'asyncio.unix_events', 'asyncio.base_subprocess', 'asyncio.selector_events', 'torch.distributions', 'torch.distributions.bernoulli', 'torch.distributions.constraints', 'torch.distributions.exp_family', 'torch.distributions.distribution', 'torch.distributions.utils', 'torch.distributions.beta', 'torch.distributions.dirichlet', 'torch.distributions.binomial', 'torch.distributions.categorical', 'torch.distributions.cauchy', 'torch.distributions.chi2', 'torch.distributions.gamma', 'torch.distributions.constraint_registry', 'torch.distributions.transforms', 'torch.distributions.continuous_bernoulli', 'torch.distributions.exponential', 'torch.distributions.fishersnedecor', 'torch.distributions.geometric', 'torch.distributions.gumbel', 'torch.distributions.uniform', 'torch.distributions.transformed_distribution', 'torch.distributions.independent', 'torch.distributions.half_cauchy', 'torch.distributions.half_normal', 'torch.distributions.normal', 'torch.distributions.kl', 'torch.distributions.laplace', 'torch.distributions.lowrank_multivariate_normal', 'torch.distributions.multivariate_normal', 'torch.distributions.one_hot_categorical', 'torch.distributions.pareto', 'torch.distributions.poisson', 'torch.distributions.kumaraswamy', 'torch.distributions.lkj_cholesky', 'torch.distributions.log_normal', 'torch.distributions.logistic_normal', 'torch.distributions.mixture_same_family', 'torch.distributions.multinomial', 'torch.distributions.negative_binomial', 'torch.distributions.relaxed_bernoulli', 'torch.distributions.relaxed_categorical', 'torch.distributions.studentT', 'torch.distributions.von_mises', 'torch.distributions.weibull', 'torch.backends.cuda', 'torch.backends.mkl', 'torch.backends.mkldnn', 'torch.backends.openmp', 'torch.backends.quantized', 'torch.quantization', 'torch.quantization.quantize', 'torch.quantization.quantization_mappings', 'torch.nn.intrinsic.quantized', 'torch.nn.intrinsic.quantized.modules', 'torch.nn.intrinsic.quantized.modules.linear_relu', 'torch.nn.intrinsic.quantized.modules.conv_relu', 'torch.nn.intrinsic.quantized.modules.bn_relu', 'torch.nn.quantized.dynamic', 'torch.nn.quantized.dynamic.modules', 'torch.nn.quantized.dynamic.modules.linear', 'torch.nn.quantized.dynamic.modules.rnn', 'torch.quantization.stubs', 'torch.quantization.fake_quantize', 'torch.quantization.observer', 'torch.quantization.utils', 'torch.quantization.quant_type', 'torch.quantization.qconfig', 'torch.quantization.fuse_modules', 'torch.quantization.fuser_method_mappings', 'torch.quantization.quantize_jit', 'torch.utils.data', 'torch.utils.data.sampler', 'torch.utils.data.dataset', 'torch.utils.data._typing', 'torch.utils.data.distributed', 'torch.utils.data.dataloader', 'queue', '_queue', 'torch.utils.data._utils', 'torch.utils.data._utils.worker', 'torch.utils.data._utils.signal_handling', 'torch.utils.data._utils.pin_memory', 'torch.utils.data._utils.collate', 'torch.utils.data._utils.fetch', 'torch.utils.data._decorator', 'torch.utils.data.datapipes', 'torch.utils.data.datapipes.iter', 'torch.utils.data.datapipes.iter.listdirfiles', 'torch.utils.data.datapipes.utils', 'torch.utils.data.datapipes.utils.common', 'torch.utils.data.datapipes.iter.loadfilesfromdisk', 'torch.utils.data.datapipes.iter.readfilesfromtar', 'torch.utils.data.datapipes.iter.readfilesfromzip', 'torch.utils.data.datapipes.iter.routeddecoder', 'torch.utils.data.datapipes.utils.decoder', 'torch.utils.data.datapipes.iter.callable', 'torch.utils.data.datapipes.iter.combining', 'torch.utils.data.datapipes.iter.combinatorics', 'torch.utils.data.datapipes.iter.grouping', 'torch.utils.data.datapipes.iter.selecting', 'torch.__config__', 'torch.__future__', 'torch.profiler', 'torch.profiler.profiler', 'gzip', 'torch._tensor_docs', 'torch._storage_docs', 'torch._classes', 'torch.quasirandom', 'torch.multiprocessing._atfork', 'torch._lobpcg', 'torchvision', 'torchvision.extension', 'torchvision.models', 'torchvision.models.alexnet', 'torchvision.models.utils', 'torchvision.models.resnet', 'torchvision.models.vgg', 'torchvision.models.squeezenet', 'torchvision.models.inception', 'torchvision.models.densenet', 'torch.utils.checkpoint', 'torchvision.models.googlenet', 'torchvision.models.mobilenet', 'torchvision.models.mobilenetv2', 'torchvision.models.mobilenetv3', 'torchvision.models.mnasnet', 'torchvision.models.shufflenetv2', 'torchvision.models.segmentation', 'torchvision.models.segmentation.segmentation', 'torchvision.models._utils', 'torchvision.models.segmentation.deeplabv3', 'torchvision.models.segmentation._utils', 'torchvision.models.segmentation.fcn', 'torchvision.models.segmentation.lraspp', 'torchvision.models.detection', 'torchvision.models.detection.faster_rcnn', 'torchvision.ops', 'torchvision.ops.boxes', 'torchvision.ops._box_convert', 'torchvision.ops.deform_conv', 'torchvision.ops.roi_align', 'torchvision.ops._utils', 'torchvision.ops.roi_pool', 'torchvision.ops.ps_roi_align', 'torchvision.ops.ps_roi_pool', 'torchvision.ops.poolers', 'torchvision.ops.feature_pyramid_network', 'torchvision.ops.focal_loss', 'torchvision.ops._register_onnx_ops', 'torch.onnx.symbolic_helper', 'torch.onnx.utils', 'torch.onnx.symbolic_opset9', 'torch.onnx.symbolic_registry', 'torch.onnx.symbolic_opset7', 'torch.onnx.symbolic_opset8', 'torch.onnx.symbolic_opset10', 'torch.onnx.symbolic_opset11', 'torch.onnx.symbolic_opset12', 'torch.onnx.symbolic_opset13', 'torchvision.models.detection._utils', 'torchvision.ops.misc', 'torchvision.models.detection.anchor_utils', 'torchvision.models.detection.image_list', 'torchvision.models.detection.generalized_rcnn', 'torchvision.models.detection.rpn', 'torchvision.models.detection.roi_heads', 'torchvision.models.detection.transform', 'torchvision.models.detection.backbone_utils', 'torchvision.models.detection.mask_rcnn', 'torchvision.models.detection.keypoint_rcnn', 'torchvision.models.detection.retinanet', 'torchvision.models.detection.ssd', 'torchvision.models.detection.ssdlite', 'torchvision.models.video', 'torchvision.models.video.resnet', 'torchvision.models.quantization', 'torchvision.models.quantization.mobilenet', 'torchvision.models.quantization.mobilenetv2', 'torchvision.models.quantization.utils', 'torchvision.models.quantization.mobilenetv3', 'torchvision.models.quantization.resnet', 'torchvision.models.quantization.googlenet', 'torchvision.models.quantization.inception', 'torchvision.models.quantization.shufflenetv2', 'torchvision.datasets', 'torchvision.datasets.lsun', 'torchvision.datasets.vision', 'PIL', 'PIL._version', 'PIL.Image', 'xml', 'xml.etree', 'xml.etree.ElementPath', 'pyexpat.errors', 'pyexpat.model', 'pyexpat', 'PIL.ImageMode', 'PIL.TiffTags', 'PIL._binary', 'PIL._util', 'PIL._imaging', 'cffi', 'cffi.api', 'cffi.lock', 'cffi.error', 'cffi.model', 'torchvision.datasets.utils', 'torch.utils.model_zoo', 'torchvision.datasets._utils', 'torchvision.datasets.folder', 'torchvision.datasets.coco', 'torchvision.datasets.cifar', 'torchvision.datasets.stl10', 'torchvision.datasets.mnist', 'torchvision.datasets.svhn', 'torchvision.datasets.phototour', 'torchvision.datasets.fakedata', 'torchvision.transforms', 'torchvision.transforms.transforms', 'torchvision.transforms.functional', 'torchvision.transforms.functional_pil', 'PIL.ImageOps', 'PIL.ImageEnhance', 'PIL.ImageFilter', 'PIL.ImageStat', 'torchvision.transforms.functional_tensor', 'torchvision.transforms.autoaugment', 'torchvision.datasets.semeion', 'torchvision.datasets.omniglot', 'torchvision.datasets.sbu', 'torchvision.datasets.flickr', 'html', 'html.entities', 'html.parser', '_markupbase', 'torchvision.datasets.voc', 'defusedxml', 'defusedxml.common', 'xml.parsers', 'xml.parsers.expat', 'xml.parsers.expat.model', 'xml.parsers.expat.errors', 'defusedxml.ElementTree', '_elementtree', 'xml.etree.ElementTree', 'torchvision.datasets.cityscapes', 'torchvision.datasets.imagenet', 'torchvision.datasets.caltech', 'torchvision.datasets.celeba', 'csv', '_csv', 'torchvision.datasets.widerface', 'torchvision.datasets.sbd', 'torchvision.datasets.usps', 'torchvision.datasets.kinetics', 'torchvision.datasets.video_utils', 'fractions', 'torchvision.io', 'torchvision.io._video_opt', 'torchvision.io.video', 'gc', 'torchvision.io.image', 'torchvision.datasets.hmdb51', 'torchvision.datasets.ucf101', 'torchvision.datasets.places365', 'torchvision.datasets.kitti', 'torchvision.utils', 'PIL.ImageDraw', 'PIL.ImageColor', 'PIL.ImageFont', 'PIL.features', 'PIL._imagingft', 'torchvision.version', 'data_manager', 'configs', 'utils', 'matplotlib', 'distutils', 'distutils.version', 'pprint', 'matplotlib.cbook', 'shlex', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.animation', 'uuid', 'matplotlib._animation_data', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib.docstring', 'matplotlib._color_data', 'cycler', 'six.moves', 'matplotlib._version', 'matplotlib.ft2font', 'dateutil', 'dateutil._version', 'kiwisolver']
+DEBUG:matplotlib:CACHEDIR=/home/tai/.cache/matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /home/tai/.cache/matplotlib/fontlist-v330.json
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+WARNING:root:Start training, with
+batch_szie: 16
+Epoche: 5
+Learning_rate: 0.010000
+K: 10
+INFO:root:Device: cuda
+INFO:root:Start epoche 0:
+INFO:root:Accuracy at step 376:
+train: 0.824333	valid: 0.785833
+INFO:root:Accuracy at step 751:
+train: 0.859333	valid: 0.826000
+INFO:root:Accuracy at step 1126:
+train: 0.896667	valid: 0.852167
+INFO:root:Accuracy at step 1501:
+train: 0.893667	valid: 0.856667
+INFO:root:Accuracy at step 1876:
+train: 0.890000	valid: 0.848667
+INFO:root:Accuracy at step 2251:
+train: 0.908833	valid: 0.860667
+INFO:root:Accuracy at step 2626:
+train: 0.903000	valid: 0.857500
+INFO:root:Accuracy at step 3001:
+train: 0.903333	valid: 0.860500
+INFO:root:Accuracy at step 3376:
+train: 0.891833	valid: 0.852500
+INFO:root:Epoche 0 finished, time usage:14.741168
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Thin.ttc) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'WenQuanYi Micro Hei' (wqy-microhei.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 250 normal>) = 10.1925
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Black.ttc) normal normal 900 normal>) = 10.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AR PL UMing CN' (uming.ttc) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-ExtraLight.ttc) normal normal 200 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AR PL UKai CN' (ukai.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Light.ttc) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Light.ttc) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-SemiBold.ttc) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-DemiLight.ttc) normal normal 350 normal>) = 10.0975
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Black.ttc) normal normal 900 normal>) = 10.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/home/tai/miniconda3/envs/XDF/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Thin.ttc) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'WenQuanYi Micro Hei' (wqy-microhei.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 250 normal>) = 10.1925
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Black.ttc) normal normal 900 normal>) = 10.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AR PL UMing CN' (uming.ttc) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal 500 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-ExtraLight.ttc) normal normal 200 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Oblique.ttf) oblique normal 400 condensed>) = 1.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Math TeX Gyre' (DejaVuMathTeXGyre.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AR PL UKai CN' (ukai.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-Bold.ttf) normal normal 700 condensed>) = 0.5349999999999999
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerifCondensed-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 100 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Medium.ttc) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal 600 normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed.ttf) normal normal 400 condensed>) = 0.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-ExtraLight.ttf) normal normal 200 normal>) = 0.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Light.ttc) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Light.ttc) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-SemiBold.ttc) normal normal 600 normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-DemiLight.ttc) normal normal 350 normal>) = 10.0975
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Black.ttc) normal normal 900 normal>) = 10.525
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSansCondensed-BoldOblique.ttf) oblique normal 700 condensed>) = 1.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 500 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal 300 normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal 300 normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/home/tai/miniconda3/envs/XDF/lib/python3.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+INFO:root:Start epoche 1:
+INFO:root:Accuracy at step 3751:
+train: 0.900667	valid: 0.866833
+INFO:root:Accuracy at step 4126:
+train: 0.894333	valid: 0.857000
+INFO:root:Accuracy at step 4501:
+train: 0.891833	valid: 0.846333
+INFO:root:Accuracy at step 4876:
+train: 0.898167	valid: 0.861167
+INFO:root:Accuracy at step 5251:
+train: 0.920500	valid: 0.867333
+INFO:root:Accuracy at step 5626:
+train: 0.904667	valid: 0.861667
+INFO:root:Accuracy at step 6001:
+train: 0.893167	valid: 0.854333
+INFO:root:Accuracy at step 6376:
+train: 0.902167	valid: 0.862833
+INFO:root:Accuracy at step 6751:
+train: 0.898333	valid: 0.856500
+INFO:root:Epoche 1 finished, time usage:14.811878
+INFO:root:Start epoche 2:
+INFO:root:Accuracy at step 7126:
+train: 0.889000	valid: 0.851000
+INFO:root:Accuracy at step 7501:
+train: 0.903167	valid: 0.857000
+INFO:root:Accuracy at step 7876:
+train: 0.900833	valid: 0.867667
+INFO:root:Accuracy at step 8251:
+train: 0.899333	valid: 0.855000
+INFO:root:Accuracy at step 8626:
+train: 0.904833	valid: 0.857667
+INFO:root:Accuracy at step 9001:
+train: 0.903833	valid: 0.865667
+INFO:root:Accuracy at step 9376:
+train: 0.901667	valid: 0.851833
+INFO:root:Accuracy at step 9751:
+train: 0.908167	valid: 0.865500
+INFO:root:Accuracy at step 10126:
+train: 0.911667	valid: 0.865667
+INFO:root:Epoche 2 finished, time usage:15.065815
+INFO:root:Start epoche 3:
+INFO:root:Accuracy at step 10501:
+train: 0.893500	valid: 0.852667
+INFO:root:Accuracy at step 10876:
+train: 0.909167	valid: 0.863833
+INFO:root:Accuracy at step 11251:
+train: 0.906167	valid: 0.870333
+INFO:root:Accuracy at step 11626:
+train: 0.911167	valid: 0.867000
+INFO:root:Accuracy at step 12001:
+train: 0.911333	valid: 0.860333
+INFO:root:Accuracy at step 12376:
+train: 0.922000	valid: 0.867167
+INFO:root:Accuracy at step 12751:
+train: 0.910333	valid: 0.867833
+INFO:root:Accuracy at step 13126:
+train: 0.897167	valid: 0.839833
+INFO:root:Accuracy at step 13501:
+train: 0.911333	valid: 0.862833
+INFO:root:Epoche 3 finished, time usage:14.681419
+INFO:root:Start epoche 4:
+INFO:root:Accuracy at step 13876:
+train: 0.895000	valid: 0.852667
+INFO:root:Accuracy at step 14251:
+train: 0.898500	valid: 0.855833
+INFO:root:Accuracy at step 14626:
+train: 0.904667	valid: 0.860500
+INFO:root:Accuracy at step 15001:
+train: 0.904167	valid: 0.852333
+INFO:root:Accuracy at step 15376:
+train: 0.919667	valid: 0.872167
+INFO:root:Accuracy at step 15751:
+train: 0.915833	valid: 0.861167
+INFO:root:Accuracy at step 16126:
+train: 0.918333	valid: 0.860167
+INFO:root:Accuracy at step 16501:
+train: 0.901500	valid: 0.857833
+INFO:root:Accuracy at step 16876:
+train: 0.911167	valid: 0.853167
+INFO:root:Epoche 4 finished, time usage:14.912625
