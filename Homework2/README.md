@@ -28,6 +28,13 @@
     - [ ] Overfitting
 - [ ] Make slides, prepare presentation
 
+## Models
+### Conv-MaxPool
+![Conv-MaxPool](./plots/arch_conv_pool.svg)
+### Stride-Conv
+![Stride-Conv](./plots/arch_conv_conv_stride.svg)
+### Small-Conv
+![Small-Conv](./plots/arch_smallconv_conv_stride.svg)
 ## Meaurement results
 ### CNN
 
