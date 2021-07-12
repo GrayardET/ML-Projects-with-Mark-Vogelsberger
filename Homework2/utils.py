@@ -97,3 +97,12 @@ def cal_matrics(model, dataset):
     recall = recall_score(labels, predicts, average='macro')
 
     return f1, precision, recall
+
+def get_n_params(model):
+    pp=0
+    for p in list(model.parameters()):
+        nn=1
+        for s in list(p.size()):
+            nn = nn*s
+        pp += nn
+    return pp
