@@ -33,17 +33,17 @@ class CNN(nn.Module):
             padding=(1, 1),
         )
         self.conv2 = nn.Conv2d(
-            in_channels=1,
+            in_channels=32,
             out_channels=32,
             kernel_size=(2, 2),
             stride=(2, 2),
             padding=(1, 1),
         )
-        self.fc1 = nn.Linear(32 * 7 * 7, 10)
+        self.fc1 = nn.Linear(32 * 8 * 8, 10)
 
     def forward(self, x):
-        x = F.relu(self.conv1(x))
-        x = self.pool(x)
+        x = F.leaky_relu(self.conv1(x))
+        x = F.leaky_relu(self.conv2(x))
         x = x.reshape(x.shape[0], -1)
         x = self.fc1(x)
         return x
@@ -55,7 +55,7 @@ class CNN(nn.Module):
         return predicts
 
 def train_cnn(batch_size, epoche, learning_rate, train_folds, val_index, best_validation_accuracy):
-    title = "batch_szie: %d|Epoche: %d|Learning_rate: %f|K: %d" % (batch_size, epoche, learning_rate, K)
+    title = "NO_POOL|batch_szie: %d|Epoche: %d|Learning_rate: %f|K: %d" % (batch_size, epoche, learning_rate, K)
     warn("Start training, with\nbatch_szie: %d\nEpoche: %d\nLearning_rate: %f\nK: %d" % (batch_size, epoche, learning_rate, K))
     if torch.cuda.is_available():
         device = torch.device('cuda')
@@ -130,12 +130,12 @@ if __name__ == "__main__":
     train_set = get_trainset2d_norm()
     folds = K_fold(train_set, 10)
 
-    best_validation_accuracy = 0
-    for learning_rate in [0.01, 0.001, 0.0001, 1, 0.1]:
-        for i in range(3):
+    best_validation_accuracy = 0.86
+    for learning_rate in [0.01, 0.001, 0.0001, 0.1, 1]:
+        for i in range(5):
             best_validation_accuracy = train_cnn(
                 batch_size=16, 
-                epoche=10, 
+                epoche=20, 
                 learning_rate=learning_rate, 
                 train_folds=folds, 
                 val_index=random.randint(0, 9), 
