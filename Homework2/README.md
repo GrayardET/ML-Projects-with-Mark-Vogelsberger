@@ -42,22 +42,22 @@
 | Model       | Accuracy    | Precision     | F1 Score      | Recall       |
 |   :----:    |    :----:   |     :----:    |   :---:       |  :---:       |
 | Conv-MaxPool | 90.57%      | 90.56%        | 90.51%        | 90.57%       |
-| **Stride-Conv** | **90.67%**      | **90.64%**        | **90.61%**        | **90.67%**       |
-| Small-Conv  | 89.11%      | 89.06%        | 89.04%        | 89.11%       |
+| Stride-Conv | 90.67%      | 90.64%        | 90.61%        | 90.67%       |
+| **Drop-Norm-L2**  | **91.14%**      | **91.16%**        | **91.13%**        | **91.14%**       |
 
 #### Vallidation Set
 | Model       | Accuracy    |
 |   :----:    |    :----:   |
 | Conv-MaxPool | 91.20%      |
 | Stride-Conv | 91.38%      |
-| Small-Conv  | 90.62%      |
+| Drop-Norm-L2  | 92.83%      |
 
 #### Training Set
 | Model       | Accuracy    |
 |   :----:    |    :----:   |
 | Conv-MaxPool | 94.94%      |
 | Stride-Conv | 94.56%      |
-| Small-Conv  | 92.85%      |
+| Small-Conv  | 98.10%      |
 
 #### Stride-Conv Heatmap on Test dataset
 ![Heatmap](./plots/heat_map.png)
