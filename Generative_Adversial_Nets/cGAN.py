@@ -18,6 +18,7 @@ import tensorflow as tf
 import numpy as np
 import datetime
 from tqdm import tqdm
+from functools import wraps
 
 gpus = tf.config.list_physical_devices('GPU')
 
@@ -43,8 +44,7 @@ IMG_PATH = '/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/local_i
 all_digits = np.concatenate([x_train, x_test])
 all_labels = np.concatenate([y_train, y_test])
 
-# Scale the pixel values to [0, 1] range, add a channel dimension to
-# the images, and one-hot encode the labels.
+# Scale the pixel values to [-1, 1] range, add a channel dimension
 all_digits = all_digits.astype("float32") / 255.0 * 2 - 1
 all_digits = np.reshape(all_digits, (-1, 28, 28, 1))
 
@@ -56,7 +56,20 @@ print(f"Shape of training images: {all_digits.shape}")
 print(f"Shape of training labels: {all_labels.shape}")
 
 # %%
+# the decorator to close figure after save
+def close_figure(func):
+    @wraps(func)
+    def plot_with_close(*args, **kwargs):
+        back = func(*args, **kwargs)
+        plt.clf()
+        plt.cla()
+        plt.close()
+        
+        return back
+    return plot_with_close
 
+# plot 9 figures within one class
+@close_figure
 def plot_class(model, class_num):
     label = class_num
     label = tf.convert_to_tensor(label)
@@ -74,6 +87,8 @@ def plot_class(model, class_num):
     plt.show()
     return
 
+# plot images from all classes, and save it if the title is given
+@close_figure
 def plot_all_class(model, title=None):
     if title is None:
         plt.ion()
@@ -106,8 +121,11 @@ def plot_all_class(model, title=None):
         figure.savefig(
             fname=title + '.png',
         )
+
     return
 
+# plot the training process
+@close_figure
 def plot_training(g_hist, d_hist, title=None):
     if title is None:
         plt.ion()
@@ -164,6 +182,7 @@ def define_discriminator(in_shape=(28,28,1), n_classes=10):
 	# compile model
 	opt = Adam(lr=0.0002, beta_1=0.5)
 	model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
+
 	return model
 
 # define the standalone generator model
@@ -196,6 +215,7 @@ def define_generator(latent_dim, n_classes=10):
 	out_layer = Conv2D(1, (7,7), activation='tanh', padding='same')(gen)
 	# define model
 	model = Model([in_lat, in_label], out_layer)
+
 	return model
 
 # define the combined generator and discriminator model, for updating the generator
@@ -213,6 +233,7 @@ def define_gan(g_model, d_model):
 	# compile model
 	opt = Adam(lr=0.0002, beta_1=0.5)
 	model.compile(loss='binary_crossentropy', optimizer=opt)
+
 	return model
 
 
@@ -223,37 +244,44 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display
     g_loss_hist = []
     for i in tqdm(range(n_epochs)):
         j = 1
-        if display:
+        if display and (j - 1) % 2 == 0:
             title = IMG_PATH + datetime.datetime.now().isoformat() + "epoch:%d" % (i + 1)
             plot_all_class(g_model, title)
         # enumerate batches over the training set
         for batch in dataset:
+            # load the data, find the current batch size
             (X_real, labels_real) = batch
-            y_real = tf.ones((64, 1))
-            # update discriminator model weights
+            batch_size = labels_real.shape[0]
+            # one vector for real images
+            y_real = tf.ones((batch_size, 1))
+
+            # update discriminator model weights on real images
             d_loss1, _ = d_model.train_on_batch([X_real, labels_real], y_real)
 
             # generate random noise
             noise = tf.random.normal((batch_size, latent_dim))
-            # gererate random classes
-            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=9, dtype=tf.int32)
+            # gererate random class labels
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes-1, dtype=tf.int32)
+            # generate fake images
             X_fake = g_model([noise, labels_fake])
+            # zero vector for fake images
             y_fake = tf.zeros((batch_size, 1))
 
-            # update discriminator model weights
+            # update discriminator model weights on fake images
             d_loss2, _ = d_model.train_on_batch([X_fake, labels_fake], y_fake)
+
             # prepare points in latent space as input for the generator
             noise = tf.random.normal((batch_size, latent_dim))
-            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=9, dtype=tf.int32)
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes-1, dtype=tf.int32)
             # create inverted labels for the fake samples
             y_gan = tf.ones((batch_size, 1))
             # update the generator via the discriminator's error
             g_loss = gan_model.train_on_batch([noise, labels_fake], y_gan)
-            # summarize loss on this batch
-            # print('>%d, %d/%d, d1=%.3f, d2=%.3f g=%.3f' %
-            #     (i+1, j+1, 70000 // 64, d_loss1, d_loss2, g_loss))
+
+            # count how many epochs
             j += 1
 
+        # collect the losses of this epoch
         d_loss = (d_loss1 + d_loss2) / 2.0
         d_loss_hist.append(d_loss)
         g_loss_hist.append(g_loss)
@@ -263,6 +291,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display
     g_model.save('local_model/'+datetime.datetime.now().isoformat()+'cgan_generator.model')
     d_model.save('local_model/'+datetime.datetime.now().isoformat()+'cgan_discriminator.model')
 
+    # plot and save the loss history
     plot_training(g_loss_hist, d_loss_hist, title=IMG_PATH + datetime.datetime.now().isoformat() + 'Loss')
 
     return
