@@ -1,12 +1,23 @@
 # %%
 from tensorflow import keras
-from tensorflow.keras import layers
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Reshape
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import Conv2DTranspose
+from tensorflow.keras.layers import LeakyReLU
+from tensorflow.keras.layers import Dropout
+from tensorflow.keras.layers import Embedding
+from tensorflow.keras.layers import Concatenate
 
-from tensorflow_docs.vis import embed
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
-import imageio
+import datetime
+from tqdm import tqdm
 
 gpus = tf.config.list_physical_devices('GPU')
 
@@ -22,222 +33,247 @@ if gpus:
     # Memory growth must be set before GPUs have been initialized
     print(e)
 
-# %%
-batch_size = 64     # 64 images per batch
-num_channels = 1    # black and white
-num_classes = 10    # 0-9
-image_size = 28     # 28 by 28 image
-latent_dim = 128    # the random Z vector
+batch_size = 64
+latent_dim = 128
+num_classes = 10
+IMG_PATH = '/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/local_images/'
 
 # %%
-# We'll use all the available examples from both the training and test sets.
-# This is an unsupervised task, no need test set
 (x_train, y_train), (x_test, y_test) = keras.datasets.fashion_mnist.load_data()
 all_digits = np.concatenate([x_train, x_test])
 all_labels = np.concatenate([y_train, y_test])
 
 # Scale the pixel values to [0, 1] range, add a channel dimension to
 # the images, and one-hot encode the labels.
-all_digits = all_digits.astype("float32") / 255.0
+all_digits = all_digits.astype("float32") / 255.0 * 2 - 1
 all_digits = np.reshape(all_digits, (-1, 28, 28, 1))
-all_labels = keras.utils.to_categorical(all_labels, 10)
-# %%
-print(type(all_digits))
-print(type(all_labels))
-print(all_digits.shape)
-print(all_labels.shape)
-print(all_digits[0])
-# %%
+
 # Create tf.data.Dataset.
 dataset = tf.data.Dataset.from_tensor_slices((all_digits, all_labels))
-dataset = dataset.shuffle(buffer_size=1024).batch(batch_size)
+dataset = dataset.shuffle(buffer_size=1024).batch(batch_size, drop_remainder=True)
 
 print(f"Shape of training images: {all_digits.shape}")
 print(f"Shape of training labels: {all_labels.shape}")
 
 # %%
-generator_in_channels = latent_dim + num_classes
-discriminator_in_channels = num_channels + num_classes
-print(generator_in_channels, discriminator_in_channels)
+
+def plot_class(model, class_num):
+    label = class_num
+    label = tf.convert_to_tensor(label)
+    label = tf.reshape(label, (1, 1))
+
+    _, ax = plt.subplots(3, 3, figsize=(20, 20))
+    for i in range(3):
+        for j in range(3):
+            noise = tf.random.normal(shape=(1, latent_dim))
+            img = model([noise, label]).numpy().squeeze()
+
+            ax[i, j].imshow(img, cmap='gray_r')
+            ax[i, j].axis('off')
+
+    plt.show()
+    return
+
+def plot_all_class(model, title=None):
+    if title is None:
+        plt.ion()
+    else: 
+        plt.ioff()
+
+    labels = []
+    for i in range(10):
+        labels.append(tf.ones((10, 1)) * i)
+
+    labels = tf.concat(labels, axis=0)
+    noises = tf.random.normal((num_classes*10, latent_dim))
+
+    img = model([noises, labels]).numpy().squeeze()
+
+    rows = []
+    for i in range(10):
+        row = np.concatenate(img[i*10: i*10+10], axis=1)
+        rows.append(row)
+    img = np.concatenate(rows, axis=0)
+
+    figure, ax = plt.subplots(figsize=(50, 50))
+
+    ax.imshow(img, cmap='gray_r')
+    ax.axis('off')
+
+    if title is None:
+        plt.show()
+    else:
+        figure.savefig(
+            fname=title + '.png',
+        )
+    return
+
+def plot_training(g_hist, d_hist, title=None):
+    if title is None:
+        plt.ion()
+    else:
+        plt.ioff()
+
+    g_hist = [l.numpy() for l in g_hist]
+    d_hist = [l.numpy() for l in d_hist]
+
+    figure, ax = plt.subplots()
+    ax.plot(g_hist, label='Generator')
+    ax.plot(d_hist, label='Discriminator')
+    ax.xlabel('Epoch')
+    ax.ylabel('Loss')
+
+    if title is None:
+        plt.show()
+    else:
+        figure.title('Training Losses')
+        figure.savefig(title + '.png')
+
+    return
+    
+# %%
+# define the standalone discriminator model
+def define_discriminator(in_shape=(28,28,1), n_classes=10):
+	# label input
+	in_label = Input(shape=(1,))
+	# embedding for categorical input
+	li = Embedding(n_classes, 50)(in_label)
+	# scale up to image dimensions with linear activation
+	n_nodes = in_shape[0] * in_shape[1]
+	li = Dense(n_nodes)(li)
+	# reshape to additional channel
+	li = Reshape((in_shape[0], in_shape[1], 1))(li)
+	# image input
+	in_image = Input(shape=in_shape)
+	# concat label as a channel
+	merge = Concatenate()([in_image, li])
+	# downsample
+	fe = Conv2D(128, (3,3), strides=(2,2), padding='same')(merge)
+	fe = LeakyReLU(alpha=0.2)(fe)
+	# downsample
+	fe = Conv2D(128, (3,3), strides=(2,2), padding='same')(fe)
+	fe = LeakyReLU(alpha=0.2)(fe)
+	# flatten feature maps
+	fe = Flatten()(fe)
+	# dropout
+	fe = Dropout(0.4)(fe)
+	# output
+	out_layer = Dense(1, activation='sigmoid')(fe)
+	# define model
+	model = Model([in_image, in_label], out_layer)
+	# compile model
+	opt = Adam(lr=0.0002, beta_1=0.5)
+	model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
+	return model
+
+# define the standalone generator model
+def define_generator(latent_dim, n_classes=10):
+	# label input
+	in_label = Input(shape=(1,))
+	# embedding for categorical input
+	li = Embedding(n_classes, 50)(in_label)
+	# linear multiplication
+	n_nodes = 7 * 7
+	li = Dense(n_nodes)(li)
+	# reshape to additional channel
+	li = Reshape((7, 7, 1))(li)
+	# image generator input
+	in_lat = Input(shape=(latent_dim,))
+	# foundation for 7x7 image
+	n_nodes = 128 * 7 * 7
+	gen = Dense(n_nodes)(in_lat)
+	gen = LeakyReLU(alpha=0.2)(gen)
+	gen = Reshape((7, 7, 128))(gen)
+	# merge image gen and label input
+	merge = Concatenate()([gen, li])
+	# upsample to 14x14
+	gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(merge)
+	gen = LeakyReLU(alpha=0.2)(gen)
+	# upsample to 28x28
+	gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(gen)
+	gen = LeakyReLU(alpha=0.2)(gen)
+	# output
+	out_layer = Conv2D(1, (7,7), activation='tanh', padding='same')(gen)
+	# define model
+	model = Model([in_lat, in_label], out_layer)
+	return model
+
+# define the combined generator and discriminator model, for updating the generator
+def define_gan(g_model, d_model):
+	# make weights in the discriminator not trainable
+	d_model.trainable = False
+	# get noise and label inputs from generator model
+	gen_noise, gen_label = g_model.input
+	# get image output from the generator model
+	gen_output = g_model.output
+	# connect image output and label input from generator as inputs to discriminator
+	gan_output = d_model([gen_output, gen_label])
+	# define gan model as taking noise and label and outputting a classification
+	model = Model([gen_noise, gen_label], gan_output)
+	# compile model
+	opt = Adam(lr=0.0002, beta_1=0.5)
+	model.compile(loss='binary_crossentropy', optimizer=opt)
+	return model
+
+
+# train the generator and discriminator
+def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display=False):
+	# manually enumerate epochs
+    d_loss_hist = []
+    g_loss_hist = []
+    for i in tqdm(range(n_epochs)):
+        j = 1
+        if display:
+            title = IMG_PATH + datetime.datetime.now().isoformat() + "epoch:%d" % (i + 1)
+            plot_all_class(g_model, title)
+        # enumerate batches over the training set
+        for batch in dataset:
+            (X_real, labels_real) = batch
+            y_real = tf.ones((64, 1))
+            # update discriminator model weights
+            d_loss1, _ = d_model.train_on_batch([X_real, labels_real], y_real)
+
+            # generate random noise
+            noise = tf.random.normal((batch_size, latent_dim))
+            # gererate random classes
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=9, dtype=tf.int32)
+            X_fake = g_model([noise, labels_fake])
+            y_fake = tf.zeros((batch_size, 1))
+
+            # update discriminator model weights
+            d_loss2, _ = d_model.train_on_batch([X_fake, labels_fake], y_fake)
+            # prepare points in latent space as input for the generator
+            noise = tf.random.normal((batch_size, latent_dim))
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=9, dtype=tf.int32)
+            # create inverted labels for the fake samples
+            y_gan = tf.ones((batch_size, 1))
+            # update the generator via the discriminator's error
+            g_loss = gan_model.train_on_batch([noise, labels_fake], y_gan)
+            # summarize loss on this batch
+            # print('>%d, %d/%d, d1=%.3f, d2=%.3f g=%.3f' %
+            #     (i+1, j+1, 70000 // 64, d_loss1, d_loss2, g_loss))
+            j += 1
+
+        d_loss = (d_loss1 + d_loss2) / 2.0
+        d_loss_hist.append(d_loss)
+        g_loss_hist.append(g_loss)
+
+
+    # save the generator model
+    g_model.save('local_model/'+datetime.datetime.now().isoformat()+'cgan_generator.model')
+    d_model.save('local_model/'+datetime.datetime.now().isoformat()+'cgan_discriminator.model')
+
+    plot_training(g_loss_hist, d_loss_hist, title=IMG_PATH + datetime.datetime.now().isoformat() + 'Loss')
+
+    return
 
 # %%
-# Create the discriminator.
-discriminator = keras.Sequential(
-    [
-        keras.layers.InputLayer((28, 28, discriminator_in_channels)),
-        layers.Conv2D(64, (3, 3), strides=(2, 2), padding="same"),
-        layers.LeakyReLU(alpha=0.2),
-        layers.Conv2D(128, (3, 3), strides=(2, 2), padding="same"),
-        layers.LeakyReLU(alpha=0.2),
-        layers.GlobalMaxPooling2D(),
-        layers.Dense(1),
-    ],
-    name="discriminator",
-)
-
-# Create the generator.
-generator = keras.Sequential(
-    [
-        keras.layers.InputLayer((generator_in_channels,)),
-        # We want to generate 128 + num_classes coefficients to reshape into a
-        # 7x7x(128 + num_classes) map.
-        layers.Dense(7 * 7 * generator_in_channels),
-        layers.LeakyReLU(alpha=0.2),
-        layers.Reshape((7, 7, generator_in_channels)),
-        layers.Conv2DTranspose(128, (4, 4), strides=(2, 2), padding="same"),
-        layers.LeakyReLU(alpha=0.2),
-        layers.Conv2DTranspose(128, (4, 4), strides=(2, 2), padding="same"),
-        layers.LeakyReLU(alpha=0.2),
-        layers.Conv2D(1, (7, 7), padding="same", activation="sigmoid"),
-    ],
-    name="generator",
-)
-
-# %%
-class ConditionalGAN(keras.Model):
-    def __init__(self, discriminator, generator, latent_dim):
-        super(ConditionalGAN, self).__init__()
-        self.discriminator = discriminator
-        self.generator = generator
-        self.latent_dim = latent_dim
-        self.gen_loss_tracker = keras.metrics.Mean(name="generator_loss")
-        self.disc_loss_tracker = keras.metrics.Mean(name="discriminator_loss")
-
-    @property
-    def metrics(self):
-        return [self.gen_loss_tracker, self.disc_loss_tracker]
-
-    def compile(self, d_optimizer, g_optimizer, loss_fn):
-        super(ConditionalGAN, self).compile()
-        self.d_optimizer = d_optimizer
-        self.g_optimizer = g_optimizer
-        self.loss_fn = loss_fn
-
-    def train_step(self, data):
-        # Unpack the data.
-        real_images, one_hot_labels = data
-
-        # Add dummy dimensions to the labels so that they can be concatenated with
-        # the images. This is for the discriminator.
-        image_one_hot_labels = one_hot_labels[:, :, None, None]
-        image_one_hot_labels = tf.repeat(
-            image_one_hot_labels, repeats=[image_size * image_size]
-        )
-        image_one_hot_labels = tf.reshape(
-            image_one_hot_labels, (-1, image_size, image_size, num_classes)
-        )
-
-        # Sample random points in the latent space and concatenate the labels.
-        # This is for the generator.
-        batch_size = tf.shape(real_images)[0]
-        random_latent_vectors = tf.random.normal(shape=(batch_size, self.latent_dim))
-        random_vector_labels = tf.concat(
-            [random_latent_vectors, one_hot_labels], axis=1
-        )
-
-        # Decode the noise (guided by labels) to fake images.
-        generated_images = self.generator(random_vector_labels)
-
-        # Combine them with real images. Note that we are concatenating the labels
-        # with these images here.
-        fake_image_and_labels = tf.concat([generated_images, image_one_hot_labels], -1)
-        real_image_and_labels = tf.concat([real_images, image_one_hot_labels], -1)
-        combined_images = tf.concat(
-            [fake_image_and_labels, real_image_and_labels], axis=0
-        )
-
-        # Assemble labels discriminating real from fake images.
-        labels = tf.concat(
-            [tf.ones((batch_size, 1)), tf.zeros((batch_size, 1))], axis=0
-        )
-
-        # Train the discriminator.
-        with tf.GradientTape() as tape:
-            predictions = self.discriminator(combined_images)
-            d_loss = self.loss_fn(labels, predictions)
-        grads = tape.gradient(d_loss, self.discriminator.trainable_weights)
-        self.d_optimizer.apply_gradients(
-            zip(grads, self.discriminator.trainable_weights)
-        )
-
-        # Sample random points in the latent space.
-        random_latent_vectors = tf.random.normal(shape=(batch_size, self.latent_dim))
-        random_vector_labels = tf.concat(
-            [random_latent_vectors, one_hot_labels], axis=1
-        )
-
-        # Assemble labels that say "all real images".
-        misleading_labels = tf.zeros((batch_size, 1))
-
-        # Train the generator (note that we should *not* update the weights
-        # of the discriminator)!
-        with tf.GradientTape() as tape:
-            fake_images = self.generator(random_vector_labels)
-            fake_image_and_labels = tf.concat([fake_images, image_one_hot_labels], -1)
-            predictions = self.discriminator(fake_image_and_labels)
-            g_loss = self.loss_fn(misleading_labels, predictions)
-        grads = tape.gradient(g_loss, self.generator.trainable_weights)
-        self.g_optimizer.apply_gradients(zip(grads, self.generator.trainable_weights))
-
-        # Monitor loss.
-        self.gen_loss_tracker.update_state(g_loss)
-        self.disc_loss_tracker.update_state(d_loss)
-        return {
-            "g_loss": self.gen_loss_tracker.result(),
-            "d_loss": self.disc_loss_tracker.result(),
-        }
-# %%
-cond_gan = ConditionalGAN(
-    discriminator=discriminator, generator=generator, latent_dim=latent_dim
-)
-cond_gan.compile(
-    d_optimizer=keras.optimizers.Adam(learning_rate=0.0003),
-    g_optimizer=keras.optimizers.Adam(learning_rate=0.0003),
-    loss_fn=keras.losses.BinaryCrossentropy(from_logits=True),
-)
-
-cond_gan.fit(dataset, epochs=20)
-# %%
-# We first extract the trained generator from our Conditiona GAN.
-trained_gen = cond_gan.generator
-
-# Choose the number of intermediate images that would be generated in
-# between the interpolation + 2 (start and last images).
-num_interpolation = 9  # @param {type:"integer"}
-
-# Sample noise for the interpolation.
-interpolation_noise = tf.random.normal(shape=(1, latent_dim))
-interpolation_noise = tf.repeat(interpolation_noise, repeats=num_interpolation)
-interpolation_noise = tf.reshape(interpolation_noise, (num_interpolation, latent_dim))
-
-
-def interpolate_class(first_number, second_number):
-    # Convert the start and end labels to one-hot encoded vectors.
-    first_label = keras.utils.to_categorical([first_number], num_classes)
-    second_label = keras.utils.to_categorical([second_number], num_classes)
-    first_label = tf.cast(first_label, tf.float32)
-    second_label = tf.cast(second_label, tf.float32)
-
-    # Calculate the interpolation vector between the two labels.
-    percent_second_label = tf.linspace(0, 1, num_interpolation)[:, None]
-    percent_second_label = tf.cast(percent_second_label, tf.float32)
-    interpolation_labels = (
-        first_label * (1 - percent_second_label) + second_label * percent_second_label
-    )
-
-    # Combine the noise and the labels and run inference with the generator.
-    noise_and_labels = tf.concat([interpolation_noise, interpolation_labels], 1)
-    fake = trained_gen.predict(noise_and_labels)
-    return fake
-
-
-start_class = 1  # @param {type:"slider", min:0, max:9, step:1}
-end_class = 5  # @param {type:"slider", min:0, max:9, step:1}
-
-fake_images = interpolate_class(start_class, end_class)
-# %%
-fake_images *= 255.0
-converted_images = fake_images.astype(np.uint8)
-converted_images = tf.image.resize(converted_images, (96, 96)).numpy().astype(np.uint8)
-imageio.mimsave("animation.gif", converted_images, fps=1)
-embed.embed_file("animation.gif")
+# create the discriminator
+d_model = define_discriminator()
+# create the generator
+g_model = define_generator(latent_dim)
+# create the gan
+gan_model = define_gan(g_model, d_model)
+# load image data
+# train model
+train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=100, display=True)
