@@ -258,7 +258,11 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display
             # generate random noise
             noise = tf.random.normal((batch_size, latent_dim))
             # gererate random class labels
+<<<<<<< HEAD
             labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes, dtype=tf.int32)
+=======
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes-1, dtype=tf.int32)
+>>>>>>> bbdc3d9af24eb0a223a4bf790600220e6f56f041
             # generate fake images
             X_fake = g_model([noise, labels_fake])
             # zero vector for fake images
@@ -269,7 +273,11 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display
 
             # prepare points in latent space as input for the generator
             noise = tf.random.normal((batch_size, latent_dim))
+<<<<<<< HEAD
             labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes, dtype=tf.int32)
+=======
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes-1, dtype=tf.int32)
+>>>>>>> bbdc3d9af24eb0a223a4bf790600220e6f56f041
             # create inverted labels for the fake samples
             y_gan = tf.ones((batch_size, 1))
             # update the generator via the discriminator's error
@@ -303,6 +311,7 @@ gan_model = define_gan(g_model, d_model)
 # load image data
 # train model
 train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=2, display=True)
+<<<<<<< HEAD
 
 # %%
 labels = []
@@ -313,3 +322,5 @@ labels = tf.concat(labels, axis=0)
 # %%
 labels
 # %%
+=======
+>>>>>>> bbdc3d9af24eb0a223a4bf790600220e6f56f041
