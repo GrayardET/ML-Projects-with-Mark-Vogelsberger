@@ -37,6 +37,7 @@ if gpus:
 batch_size = 64
 latent_dim = 128
 num_classes = 10
+image_size = 28
 IMG_PATH = '/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/local_images/'
 
 # %%
@@ -46,7 +47,7 @@ all_labels = np.concatenate([y_train, y_test])
 
 # Scale the pixel values to [-1, 1] range, add a channel dimension
 all_digits = all_digits.astype("float32") / 255.0 * 2 - 1
-all_digits = np.reshape(all_digits, (-1, 28, 28, 1))
+all_digits = np.reshape(all_digits, (-1, image_size, image_size, 1))
 
 # Create tf.data.Dataset.
 dataset = tf.data.Dataset.from_tensor_slices((all_digits, all_labels))
@@ -132,19 +133,16 @@ def plot_training(g_hist, d_hist, title=None):
     else:
         plt.ioff()
 
-    g_hist = [l.numpy() for l in g_hist]
-    d_hist = [l.numpy() for l in d_hist]
-
     figure, ax = plt.subplots()
     ax.plot(g_hist, label='Generator')
     ax.plot(d_hist, label='Discriminator')
-    ax.xlabel('Epoch')
-    ax.ylabel('Loss')
+    ax.set(xlabel='Epoch')
+    ax.set(ylabel='Loss')
 
     if title is None:
         plt.show()
     else:
-        figure.title('Training Losses')
+        figure.suptitle('Training Losses')
         figure.savefig(title + '.png')
 
     return
@@ -236,7 +234,6 @@ def define_gan(g_model, d_model):
 
 	return model
 
-
 # train the generator and discriminator
 def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display=False):
 	# manually enumerate epochs
@@ -305,4 +302,4 @@ g_model = define_generator(latent_dim)
 gan_model = define_gan(g_model, d_model)
 # load image data
 # train model
-train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=100, display=True)
+train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=2, display=True)
