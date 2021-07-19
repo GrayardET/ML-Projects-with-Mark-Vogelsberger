@@ -58,6 +58,7 @@
 | Conv-MaxPool | 94.94%      |
 | Stride-Conv | 94.56%      |
 | Small-Conv  | 98.10%      |
-
+poweauifhjwiafujhawiofcjsdoaikfjvreiughwe;afoicjsdoiavjnda;oiwejfuoirwehgvsakljdcaw;oifhwoighawefwagwaef
+wafuijhawiufnwilsaufhweoafuhiweao;ljfhncuskdjafhcnweiuafhaowe
 #### Stride-Conv Heatmap on Test dataset
 ![Heatmap](./plots/heat_map.png)
