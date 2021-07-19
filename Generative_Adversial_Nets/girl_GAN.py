@@ -44,6 +44,12 @@ IMG_PATH = '/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/local_i
 ARRAY_GIRL_PATH = r'/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/array_girl'
 LABEL_GIRL_PATH = r'/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/label_girl'
 color_set = [1, 2, 5, 9]
+latent_vector_fixed = tf.random.normal(shape=(num_classes*20, latent_dim))
+labels_fixed = []
+for i in range(num_classes):
+    labels_fixed.append(tf.ones((20, 1), dtype=tf.int32) * i)
+labels_fixed = tf.concat(labels_fixed, axis=0)
+
 
 # %%
 
@@ -121,17 +127,17 @@ def plot_all_class(model, title=None):
     else: 
         plt.ioff()
 
-    labels = []
-    for i in range(num_classes):
-        labels.append(tf.ones((10, 1), dtype=tf.int32) * i)
-    labels = tf.concat(labels, axis=0)
-    noises = tf.random.normal((num_classes*10, latent_dim))
+    labels = labels_fixed
+    noises = latent_vector_fixed
 
-    img = model([noises, labels]).numpy().squeeze()
+    imgs = model([noises, labels]).numpy().squeeze()
 
     rows = []
-    for i in range(num_classes):
-        row = np.concatenate(img[i*10: i*10+10], axis=1)
+    for i in range(num_classes * 2):
+        row = []
+        for j in range(10):
+            row.append(imgs[i*10+j])
+        row = np.concatenate(row, axis=1)
         rows.append(row)
     img = np.concatenate(rows, axis=0)
     img = (img + 1) / 2
@@ -174,7 +180,7 @@ def plot_training(g_hist, d_hist, title=None):
     
 # %%
 # define the standalone discriminator model
-def define_discriminator(in_shape=(112,112,3), n_classes=5):
+def define_discriminator(in_shape=(112,112,3), n_classes=4):
 	# label input
 	in_label = Input(shape=(1,))
 	# embedding for categorical input
