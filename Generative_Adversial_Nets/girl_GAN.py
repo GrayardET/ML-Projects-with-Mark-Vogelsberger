@@ -1,4 +1,5 @@
 # %%
+import pickle
 from tensorflow import keras
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import Model
@@ -36,25 +37,49 @@ if gpus:
 
 batch_size = 64
 latent_dim = 128
-num_classes = 10
-image_size = 28
+num_classes = 4
+image_size = 112
+in_channel = 3
 IMG_PATH = '/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/local_images/'
+ARRAY_GIRL_PATH = r'/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/array_girl'
+LABEL_GIRL_PATH = r'/home/tai/XDF_Project/MIT-Reserach/Generative_Adversial_Nets/label_girl'
+color_set = [1, 2, 5, 9]
 
 # %%
-(x_train, y_train), (x_test, y_test) = keras.datasets.fashion_mnist.load_data()
-all_digits = np.concatenate([x_train, x_test])
-all_labels = np.concatenate([y_train, y_test])
 
-# Scale the pixel values to [-1, 1] range, add a channel dimension
-all_digits = all_digits.astype("float32") / 255.0 * 2 - 1
-all_digits = np.reshape(all_digits, (-1, image_size, image_size, 1))
+with open(ARRAY_GIRL_PATH, 'rb') as file:
+    girl_arrays = pickle.load(file)
+file.close()
+with open(LABEL_GIRL_PATH, 'rb') as file:
+    girl_labels = pickle.load(file)
+file.close()
+
+# (x_train, y_train), (x_test, y_test) = keras.datasets.fashion_mnist.load_data()
+# all_digits = np.concatenate([x_train, x_test])
+# all_labels = np.concatenate([y_train, y_test])
+
+# # Scale the pixel values to [-1, 1] range, add a channel dimension
+# all_digits = all_digits.astype("float32") / 255.0 * 2 - 1
+# all_digits = np.reshape(all_digits, (-1, image_size, image_size, 1))
 
 # Create tf.data.Dataset.
-dataset = tf.data.Dataset.from_tensor_slices((all_digits, all_labels))
+idx = np.where((girl_labels == 1) | (girl_labels == 2) | (girl_labels == 5) | (girl_labels == 9))
+girls = girl_arrays[idx].astype("float32") / 255.0 * 2 - 1
+labels = girl_labels[idx]
+for i in range(len(labels)):
+    if labels[i] == 1:
+        labels[i] = 0
+    if labels[i] == 2:
+        labels[i] = 1
+    if labels[i] == 5:
+        labels[i] = 2
+    if labels[i] == 9:
+        labels[i] = 3
+dataset = tf.data.Dataset.from_tensor_slices((girls, labels))
 dataset = dataset.shuffle(buffer_size=1024).batch(batch_size, drop_remainder=True)
 
-print(f"Shape of training images: {all_digits.shape}")
-print(f"Shape of training labels: {all_labels.shape}")
+print(f"Shape of training images: {girl_arrays.shape}")
+print(f"Shape of training labels: {girl_labels.shape}")
 
 # %%
 # the decorator to close figure after save
@@ -97,23 +122,23 @@ def plot_all_class(model, title=None):
         plt.ioff()
 
     labels = []
-    for i in range(10):
-        labels.append(tf.ones((10, 1)) * i)
-
+    for i in range(num_classes):
+        labels.append(tf.ones((10, 1), dtype=tf.int32) * i)
     labels = tf.concat(labels, axis=0)
     noises = tf.random.normal((num_classes*10, latent_dim))
 
     img = model([noises, labels]).numpy().squeeze()
 
     rows = []
-    for i in range(10):
+    for i in range(num_classes):
         row = np.concatenate(img[i*10: i*10+10], axis=1)
         rows.append(row)
     img = np.concatenate(rows, axis=0)
+    img = (img + 1) / 2
 
     figure, ax = plt.subplots(figsize=(50, 50))
 
-    ax.imshow(img, cmap='gray_r')
+    ax.imshow(img)
     ax.axis('off')
 
     if title is None:
@@ -149,7 +174,7 @@ def plot_training(g_hist, d_hist, title=None):
     
 # %%
 # define the standalone discriminator model
-def define_discriminator(in_shape=(28,28,1), n_classes=10):
+def define_discriminator(in_shape=(112,112,3), n_classes=5):
 	# label input
 	in_label = Input(shape=(1,))
 	# embedding for categorical input
@@ -164,7 +189,7 @@ def define_discriminator(in_shape=(28,28,1), n_classes=10):
 	# concat label as a channel
 	merge = Concatenate()([in_image, li])
 	# downsample
-	fe = Conv2D(128, (3,3), strides=(2,2), padding='same')(merge)
+	fe = Conv2D(128, (5,5), strides=(2,2), padding='same')(merge)
 	fe = LeakyReLU(alpha=0.2)(fe)
 	# downsample
 	fe = Conv2D(128, (3,3), strides=(2,2), padding='same')(fe)
@@ -184,37 +209,43 @@ def define_discriminator(in_shape=(28,28,1), n_classes=10):
 	return model
 
 # define the standalone generator model
-def define_generator(latent_dim, n_classes=10):
-	# label input
-	in_label = Input(shape=(1,))
-	# embedding for categorical input
-	li = Embedding(n_classes, 50)(in_label)
-	# linear multiplication
-	n_nodes = 7 * 7
-	li = Dense(n_nodes)(li)
-	# reshape to additional channel
-	li = Reshape((7, 7, 1))(li)
-	# image generator input
-	in_lat = Input(shape=(latent_dim,))
-	# foundation for 7x7 image
-	n_nodes = 128 * 7 * 7
-	gen = Dense(n_nodes)(in_lat)
-	gen = LeakyReLU(alpha=0.2)(gen)
-	gen = Reshape((7, 7, 128))(gen)
-	# merge image gen and label input
-	merge = Concatenate()([gen, li])
-	# upsample to 14x14
-	gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(merge)
-	gen = LeakyReLU(alpha=0.2)(gen)
-	# upsample to 28x28
-	gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(gen)
-	gen = LeakyReLU(alpha=0.2)(gen)
-	# output
-	out_layer = Conv2D(1, (7,7), activation='tanh', padding='same')(gen)
-	# define model
-	model = Model([in_lat, in_label], out_layer)
+def define_generator(latent_dim, n_classes=4):
+    # label input
+    in_label = Input(shape=(1,))
+    # embedding for categorical input
+    li = Embedding(n_classes, 50)(in_label)
+    # linear multiplication
+    n_nodes = 7 * 7
+    li = Dense(n_nodes)(li)
+    # reshape to additional channel
+    li = Reshape((7, 7, 1))(li)
+    # image generator input
+    in_lat = Input(shape=(latent_dim,))
+    # foundation for 7x7 image
+    n_nodes = 128 * 7 * 7
+    gen = Dense(n_nodes)(in_lat)
+    gen = LeakyReLU(alpha=0.2)(gen)
+    gen = Reshape((7, 7, 128))(gen)
+    # merge image gen and label input
+    merge = Concatenate()([gen, li])
+    # upsample to 14x14
+    gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(merge)
+    gen = LeakyReLU(alpha=0.2)(gen)
+    # upsample to 28x28
+    gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(gen)
+    gen = LeakyReLU(alpha=0.2)(gen)
+    # upsample to 56x56
+    gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(gen)
+    gen = LeakyReLU(alpha=0.2)(gen)
+    # upsample to 112x112
+    gen = Conv2DTranspose(128, (4,4), strides=(2,2), padding='same')(gen)
+    gen = LeakyReLU(alpha=0.2)(gen)
+    # output
+    out_layer = Conv2D(3, (7,7), activation='tanh', padding='same')(gen)
+    # define model
+    model = Model([in_lat, in_label], out_layer)
 
-	return model
+    return model
 
 # define the combined generator and discriminator model, for updating the generator
 def define_gan(g_model, d_model):
@@ -258,7 +289,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display
             # generate random noise
             noise = tf.random.normal((batch_size, latent_dim))
             # gererate random class labels
-            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes-1, dtype=tf.int32)
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes, dtype=tf.int32)
             # generate fake images
             X_fake = g_model([noise, labels_fake])
             # zero vector for fake images
@@ -269,7 +300,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=10, display
 
             # prepare points in latent space as input for the generator
             noise = tf.random.normal((batch_size, latent_dim))
-            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes-1, dtype=tf.int32)
+            labels_fake = tf.random.uniform((batch_size, 1), minval=0, maxval=num_classes, dtype=tf.int32)
             # create inverted labels for the fake samples
             y_gan = tf.ones((batch_size, 1))
             # update the generator via the discriminator's error
@@ -302,4 +333,4 @@ g_model = define_generator(latent_dim)
 gan_model = define_gan(g_model, d_model)
 # load image data
 # train model
-train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=2, display=True)
+train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=300, display=True)
