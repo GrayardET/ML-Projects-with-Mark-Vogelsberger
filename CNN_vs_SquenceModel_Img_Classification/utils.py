@@ -4,6 +4,11 @@ Please add utililty functions here
 from numpy.lib.function_base import average
 import seaborn as sns
 import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+import torchvision
+import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 from configs import *
 from sklearn.metrics import confusion_matrix
@@ -12,6 +17,7 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from data_manager import get_loader
 from torch.utils.data import DataLoader
+
 
 def check_accuracy(loader, model, device):
     num_correct = 0
