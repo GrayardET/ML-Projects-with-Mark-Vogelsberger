@@ -1,11 +1,13 @@
 # Objective
 This project intends to compare the performance of an image classification task on [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist) among different simple CNNs, a RNN, and an LSTM.
 ## CNN models
-<p align="center">
+
 
 ### Conv-MaxPool
 
-<img align = "center" src ="./plots/arch_conv_pool.png"  alt = "Conv-MaxPool" width = "700 px" />  
+<p align="center">
+  <img align = "center" src ="./plots/arch_conv_pool.png"  alt = "Conv-MaxPool" width = "700 px" />  
+</p>
 
 ### Strided-Conv
 <img align = "center" src ="./plots/arch_conv_conv_stride.png" alt = "Stride-Conv" width = "700 px"/> 
@@ -13,7 +15,7 @@ This project intends to compare the performance of an image classification task 
 ### Small-Conv
 
 <img align = "center" src ="./plots/arch_smallconv_conv_stride.png" alt = "Small-Conv" width = "700 px"/>  
-</p>
+
 
 <!-- ![Conv-MaxPool](./plots/arch_conv_pool.png)
 ### Stride-Conv
