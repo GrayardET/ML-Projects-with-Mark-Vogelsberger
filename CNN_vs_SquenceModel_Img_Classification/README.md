@@ -26,6 +26,7 @@ The general model structure of both RNN and LSTM are shown below:
 
 <img align = "center" src =".\plots\LSTM_RNN_Model.png" alt = " Sequence model structure" width = "700 px"/> 
    
+# Result
 
 #### Test Set
 | Model        | Accuracy    | Precision     | F1 Score      | Recall       |
