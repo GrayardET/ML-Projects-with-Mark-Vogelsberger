@@ -9,9 +9,13 @@ This project intends to compare the performance of an image classification task 
   <img align = "center" src ="./plots/arch_conv_pool.png"  alt = "Conv-MaxPool" width = "700 px" />  
 </p>
 
-### Strided-Conv
-<img align = "center" src ="./plots/arch_conv_conv_stride.png" alt = "Stride-Conv" width = "700 px"/> 
+<p align="center">
+  
+  ### Strided-Conv
 
+  <img align = "center" src ="./plots/arch_conv_conv_stride.png" alt = "Stride-Conv" width = "700 px"/> 
+</p>
+  
 ### Small-Conv
 
 <img align = "center" src ="./plots/arch_smallconv_conv_stride.png" alt = "Small-Conv" width = "700 px"/>  
