@@ -70,7 +70,7 @@ K fold validation is performed on the dataset using Both RNN and LSTM. In the ex
 |   :----:    |    :----:   |  
 |   82.52%  | 89.93%    |
   
-<div>
+</div>
   
 ### Accuracy on both training and validation set over time
 <p align = "center">
