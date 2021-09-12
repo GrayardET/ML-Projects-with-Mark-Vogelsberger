@@ -63,10 +63,12 @@ The general model structure of both RNN and LSTM are shown below:
 K fold validation is performed on the dataset using Both RNN and LSTM. In the experiment, RNN generally started to overfit after epoch 10, with validation accuracies vascilating at around 83%-84%, whereas LSTM tended to overfit after epoch 6 with around 89% validation accuracy. We found that for our task specifically, LSTM outperformed RNN by a large margin, and also converged faster. The best validation accuracy achieved by our LSTM reached 90.55%, which is comparible to the majority of our simple CNN models.
 ### Average validation accuracy obtained from 5-fold validation
 
+<div align = "center">
 |    RNN    |  LSTM     | 
 |   :----:    |    :----:   |  
 |   82.52%  | 89.93%    |
-
+<div>
+  
 ### Accuracy on both training and validation set over time
 <p align = "center">
 <img src=".\plots\RNN_LSTM_classification_plot.png" alt="RNN vs LSTM accuracy plot" width="700 px"/>
