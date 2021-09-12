@@ -1,7 +1,7 @@
 # Objective
 This project intends to compare the performance of an image classification task on [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist) among different simple CNNs, a RNN, and an LSTM.
 ## CNN models
-<center>
+<p align="center">
 
 ### Conv-MaxPool
 
@@ -13,7 +13,8 @@ This project intends to compare the performance of an image classification task 
 ### Small-Conv
 
 <img align = "center" src ="./plots/arch_smallconv_conv_stride.png" alt = "Small-Conv" width = "700 px"/>  
-</center>
+</p>
+
 <!-- ![Conv-MaxPool](./plots/arch_conv_pool.png)
 ### Stride-Conv
 ![Stride-Conv](./plots/arch_conv_conv_stride.png)
@@ -66,6 +67,7 @@ The general model structure of both RNN and LSTM are shown below:
 ## Sequence model
 K fold validation is performed on the dataset using Both RNN and LSTM. In the experiment, RNN generally started to overfit after epoch 10, with validation accuracies vascilating at around 83%-84%, whereas LSTM tended to overfit after epoch 6 with around 89% validation accuracy. We found that for our task specifically, LSTM outperformed RNN by a large margin, and also converged faster. The best validation accuracy achieved by our LSTM reached 90.55%, which is comparible to the majority of our simple CNN models.
 ### Average validation accuracy obtained from 5-fold validation
+
 |    RNN    |  LSTM     | 
 |   :----:    |    :----:   |  
 |   82.52%  | 89.93%    |
