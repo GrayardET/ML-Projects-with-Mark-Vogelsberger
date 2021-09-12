@@ -1,6 +1,6 @@
 # Objective
 This project intends to compare the performance of an image classification task on [Fashion-MNIST dataset](https://github.com/zalandoresearch/fashion-mnist) among different simple CNNs, a RNN, and an LSTM.
-# CNN models
+## CNN models
 ### Conv-MaxPool
 
 <img align = "center" src ="./plots/arch_conv_pool.png"  alt = "Conv-MaxPool" width = "700 px" />  
@@ -18,6 +18,14 @@ This project intends to compare the performance of an image classification task 
 ![Small-Conv](./plots/arch_smallconv_conv_stride.png)
 # Meaurement results
 ## CNN -->
+
+## Sequence Mdoel
+RNN is known for processing sequential data with time, but it can also be applied on image datasets. We input one row of the image into the model at every time step from top to bottom, as if the model learns to predict by reading the image one row after another. Since the resolution of images in the Fashion Mnist dataset is 28 by 28, the input dimension for each time step is(1x28), and the sequence length is also 28. Then the hidden state of the final time step gets passed to a fully connected network to make the final prediction.
+
+The general model structure of both RNN and LSTM are shown below:
+
+<img align = "center" src =".\plots\LSTM_RNN_Model.png" alt = " Sequence model structure" width = "700 px"/> 
+   
 
 #### Test Set
 | Model        | Accuracy    | Precision     | F1 Score      | Recall       |
